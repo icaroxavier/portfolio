@@ -3,8 +3,11 @@ import Head from 'next/head'
 import { motion } from 'framer-motion'
 
 import { Container } from '../styles/pages/Home'
+import { useRouter } from 'next/router'
 
 const Home: React.FC = () => {
+  const router = useRouter()
+
   return (
     <Container>
       <Head>
@@ -42,7 +45,7 @@ const Home: React.FC = () => {
           }
         }}
       >
-        <h1>Xalo Dev</h1>
+        <h1 onClick={() => router.push('/teste')}>Xalo Dev</h1>
       </motion.div>
       <motion.p
         initial="hidden"
