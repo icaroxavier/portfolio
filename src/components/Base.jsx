@@ -70,21 +70,60 @@ const Base = (props) => {
       <main>{props.children}</main>
       <footer>
         <div className='containerImages'>
-          <a className='divImage' rel='noreferrer' href='https://www.linkedin.com/in/%C3%ADcaro-gabriel-67148b1ba/' target="_blank">
+          <motion.a 
+            className='divImage' 
+            rel='noreferrer' 
+            href='https://www.linkedin.com/in/%C3%ADcaro-gabriel-67148b1ba/' 
+            target="_blank"
+            whileHover={{
+              position: 'relative',
+              zIndex: 1,
+              scale: 1.1,
+              transition: {
+                duration: 0.2
+              }
+            }}
+          >
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
               <Image layout='fill' src='/linkedin.png' alt='linkedin logo'></Image>
             </div>
-          </a>
-          <a className='divImage' rel='noreferrer' href='https://github.com/XaloDev' target="_blank">
+          </motion.a>
+          <motion.a  
+            className='divImage' 
+            rel='noreferrer' 
+            href='https://github.com/XaloDev' 
+            target="_blank"
+            whileHover={{
+              position: 'relative',
+              zIndex: 1,
+              scale: 1.1,
+              transition: {
+                duration: 0.2
+              }
+            }}
+          >
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
                 <Image layout='fill' src='/github.png' alt='github logo'></Image>
             </div>
-          </a>
-          <a className='divImage' rel='noreferrer' href='https://wa.me/5585998164001?text=Oi,%20tudo%20bem?' target="_blank">
+          </motion.a>
+          <motion.a  
+            className='divImage' 
+            rel='noreferrer' 
+            href='https://wa.me/5585998164001?text=Oi,%20tudo%20bem?' 
+            target="_blank"
+            whileHover={{
+              position: 'relative',
+              zIndex: 1,
+              scale: 1.1,
+              transition: {
+                duration: 0.2
+              }
+            }}
+          >
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
               <Image layout='fill' src='/whatsapp.png' alt='whatsapp logo'></Image>
             </div>
-          </a>
+          </motion.a>
         </div>
         <span>© 2021 Xalo Dev. Todos os direitos reservados.</span>
       </footer>

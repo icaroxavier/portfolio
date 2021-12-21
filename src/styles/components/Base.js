@@ -34,6 +34,7 @@ export const Container = styled.div`
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+    
   }
 
   p {
@@ -69,7 +70,12 @@ export const Container = styled.div`
         color: ${props => props.theme.colors.text};
         padding: 0 5%;
         height: auto;
-       
+
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
        
         align-self: center;
         border-radius: 100px;
@@ -145,7 +151,14 @@ export const Container = styled.div`
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      
       .divImage {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; 
         
         height: 5vh;
         width: 5vh;
