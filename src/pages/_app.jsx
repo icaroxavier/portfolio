@@ -7,6 +7,8 @@ import { ChakraProvider } from '@chakra-ui/react'
 import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
 
+import '../firebase/config'
+
 const MyApp = ({ Component, pageProps }) => {
   return (
     <ChakraProvider>

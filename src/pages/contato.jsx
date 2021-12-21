@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Base from '../components/Base'
 import Head from 'next/head'
+import firebase from 'firebase/app'
 import { Contact } from '../styles/containers/Contact'
 import { motion } from 'framer-motion'
-import ReCAPTCHA from "react-google-recaptcha";
+
+
+
+
 
 
 const container = {
@@ -26,6 +30,17 @@ const Contato = () => {
   const [nome, setNome] = useState('')
   const [email, setEmail] = useState('')
   const [mensagem, setMensagem] = useState('')
+
+  useEffect(() => {
+    getDados()
+  }, [])
+
+  async function getDados() {
+    firebase.firestore().collection('mensagensTeste').get().then(result => {
+      console.log(result.docs.map(doc => doc.data()))
+    })
+    
+  }
 
 
   const handleSubmit = e => {
@@ -51,9 +66,9 @@ const Contato = () => {
     return emailRegex.test(emailParametro)
   }
 
-  const onChangeCaptcha = value => {
-    console.log("Captcha value:", value);
-  }
+  // const onChangeCaptcha = value => {
+  //   console.log("Captcha value:", value);
+  // }
 
   return (
     <Base>
