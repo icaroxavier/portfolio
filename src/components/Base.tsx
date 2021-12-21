@@ -27,11 +27,12 @@ const Base: React.FC = (props: BaseProps) => {
       <header>
         <div className="fundoHeader" />
         <motion.div
+          style={{ width: 'min-content' }}
           whileHover={{
             position: 'relative',
 
             zIndex: 1,
-            scale: 1.01,
+            scale: 1.1,
             transition: {
               duration: 0.3
             }
