@@ -12,6 +12,11 @@ export const Container = styled.div`
   flex-direction: column;
   overflow-x: hidden;
 
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
   h1 {
     font-size: 54px;
     color: ${props => props.theme.colors.primary};
@@ -77,11 +82,5 @@ export const Container = styled.div`
       }
       margin-bottom: 2vh;
     }
-  }
-
-  .introducao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 `

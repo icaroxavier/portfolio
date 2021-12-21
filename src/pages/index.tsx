@@ -1,50 +1,16 @@
 import React from 'react'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
-
-import { Container } from '../styles/pages/Home'
-import { useRouter } from 'next/router'
-import IconeX from '../assets/x.svg'
+import Base from '../components/Base'
+import { Introducao } from '../styles/containers/Introducao'
 
 const Home: React.FC = () => {
-  const router = useRouter()
-
   return (
-    <Container>
+    <Base>
       <Head>
-        <title>Xalo Dev</title>
+        <title>Home - Xalo Dev</title>
       </Head>
-      <header>
-        <div className="fundoHeader" />
-        <IconeX />
-        <div className="botoes">
-          <motion.button
-            whileHover={{
-              position: 'relative',
-              zIndex: 1,
-              scale: 1.1,
-              transition: {
-                duration: 0.2
-              }
-            }}
-          >
-            Meu CV
-          </motion.button>
-          <motion.button
-            whileHover={{
-              position: 'relative',
-              zIndex: 1,
-              scale: 1.1,
-              transition: {
-                duration: 0.2
-              }
-            }}
-          >
-            Entre em contato!
-          </motion.button>
-        </div>
-      </header>
-      <div className="introducao">
+      <Introducao>
         <motion.div
           initial="hidden"
           animate="visible"
@@ -70,7 +36,7 @@ const Home: React.FC = () => {
             }
           }}
         >
-          <h1 onClick={() => router.push('/teste')}>Xalo Dev</h1>
+          <h1>Xalo Dev</h1>
         </motion.div>
         <motion.p
           initial="hidden"
@@ -99,8 +65,8 @@ const Home: React.FC = () => {
         >
           Full-Stack Web Develeper.
         </motion.p>
-      </div>
-    </Container>
+      </Introducao>
+    </Base>
   )
 }
 
