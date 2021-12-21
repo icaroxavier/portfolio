@@ -68,8 +68,20 @@ export const Container = styled.div`
         border-color: ${props => props.theme.colors.text};
         background: ${props => props.theme.colors.background};
         color: ${props => props.theme.colors.text};
-        padding: 0 5%;
+        padding: 2% 5%;
         height: auto;
+        @media (max-width: 350px) {
+          height: min-content;
+          padding: 2% 3%;
+          font-size: 15px;
+        }
+
+        @media (max-width: 300px) {
+          height: min-content;
+          padding: 2% 3%;
+          font-size: 13px;
+        }
+       
 
         -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
@@ -97,14 +109,8 @@ export const Container = styled.div`
    
 
     .botoes {
-     
       display: flex;
       justify-content: space-around;
-     
-      * {
-       
-      }
-     
     }
   }
 
@@ -137,10 +143,21 @@ export const Container = styled.div`
       font-size: 12px;
       padding: 1vh 10%;
     }
+
+   
    
     span {
       color: #999;
       height: min-content;
+      @media (max-width: 1025px) {
+        font-size: 14px;
+      }
+      @media (max-width: 700px) {
+        font-size: 12px;
+      }
+      @media (max-width: 300px) {
+        font-size: 10px;
+      }
       
     }
 
