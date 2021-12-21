@@ -75,11 +75,11 @@ const Base = (props) => {
               <Image layout='fill' src='/linkedin.png' alt='linkedin logo'></Image>
             </div>
           </a>
-          <div className='divImage' onClick={() => router.push('/contato')}>
+          <a className='divImage' rel='noreferrer' href='https://github.com/XaloDev' target="_blank">
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
-                <Image layout='fill' src='/mail.png' alt='mail logo'></Image>
+                <Image layout='fill' src='/github.png' alt='github logo'></Image>
             </div>
-          </div>
+          </a>
           <a className='divImage' rel='noreferrer' href='https://wa.me/5585998164001?text=Oi,%20tudo%20bem?' target="_blank">
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
               <Image layout='fill' src='/whatsapp.png' alt='whatsapp logo'></Image>
