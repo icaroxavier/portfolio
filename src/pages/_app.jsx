@@ -7,7 +7,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <ChakraProvider>
       <ThemeProvider theme={theme}>

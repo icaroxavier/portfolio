@@ -1,15 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
-
 import { Container } from '../styles/components/Base'
 import { useRouter } from 'next/router'
 import IconeX from '../assets/x.svg'
-interface BaseProps {
-  children: React.ReactNode
-}
 
-const Base: React.FC = (props: BaseProps) => {
+
+const Base = (props) => {
   const router = useRouter()
 
   const downloadCurriculo = () => {

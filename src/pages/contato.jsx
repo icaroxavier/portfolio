@@ -2,7 +2,7 @@ import React from 'react'
 import Base from '../components/Base'
 import Head from 'next/head'
 
-const Contato: React.FC = () => {
+const Contato = () => {
   return (
     <Base>
       <Head>

@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { Container } from '../styles/components/Base'
 import { useRouter } from 'next/router'
 
-const Home: React.FC = () => {
+const Home = () => {
   const router = useRouter()
 
   return (

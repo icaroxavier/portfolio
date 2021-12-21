@@ -10,9 +10,7 @@ import Document, {
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
-  static async getInitialProps(
-    ctx: DocumentContext
-  ): Promise<DocumentInitialProps> {
+  static async getInitialProps(ctx){
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
 
@@ -37,13 +35,13 @@ export default class MyDocument extends Document {
     }
   }
 
-  render(): JSX.Element {
+  render(){
     return (
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=optional"
             rel="stylesheet"
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
