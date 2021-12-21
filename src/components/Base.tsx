@@ -26,7 +26,20 @@ const Base: React.FC = (props: BaseProps) => {
       </Head>
       <header>
         <div className="fundoHeader" />
-        <IconeX onClick={() => router.push('/')} />
+        <motion.div
+          whileHover={{
+            position: 'relative',
+
+            zIndex: 1,
+            scale: 1.01,
+            transition: {
+              duration: 0.3
+            }
+          }}
+        >
+          <IconeX onClick={() => router.push('/')} />
+        </motion.div>
+
         <div className="botoes">
           <motion.button
             onClick={downloadCurriculo}
