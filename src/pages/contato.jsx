@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 
 
 
+
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -31,27 +32,30 @@ const Contato = () => {
   const [email, setEmail] = useState('')
   const [mensagem, setMensagem] = useState('')
 
-  useEffect(() => {
-    getDados()
-  }, [])
-
-  async function getDados() {
-    firebase.firestore().collection('mensagensTeste').get().then(result => {
-      console.log(result.docs.map(doc => doc.data()))
-    })
-    
-  }
-
 
   const handleSubmit = e => {
-    enviaEmail(e)
+    enviaMensagem(e)
   }
 
-  const enviaEmail = (e) => {
+  async function enviaMensagem(e){
     e.preventDefault()
+    const db = firebase.firestore()
     console.log(nome, email, mensagem)
     if(IsEmail(email) && nome.length > 0 && mensagem.length > 0){
-      console.log('valido')
+      const nomeCopy = nome
+      const emailCopy = email
+      const mensagemCopy = mensagem
+      setNome('')
+      setEmail('')
+      setMensagem('')
+      await db.collection('mensagens').add({
+        nome: nomeCopy,
+        email: emailCopy,
+        mensagem: mensagemCopy
+    })
+    .then(docRef => {
+        alert('Mensagem enviada!')
+    })
     }else if(nome.length < 1){
       alert('Insira um nome!')
     }else if(mensagem.length < 1){
@@ -96,7 +100,7 @@ const Contato = () => {
               onChange={onChangeCaptcha}
             /> */}
             <motion.button 
-              onClick={enviaEmail}
+              onClick={enviaMensagem}
               variants={item}
               whileHover={{
                 position: 'relative',
