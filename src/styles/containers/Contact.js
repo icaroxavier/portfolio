@@ -39,6 +39,7 @@ export const Contact = styled.div`
             font-weight: 700;
             margin-top: 2vh;
             margin-bottom: 2vh;
+            width: 80%;
             
         }
 
