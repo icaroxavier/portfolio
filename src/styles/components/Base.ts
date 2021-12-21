@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 100%;
   min-height: 100vh;
   padding: 2vh 10%;
+  background: ${props => props.theme.colors.background};
   @media (max-width: 800px) {
     padding: 2vh 3%;
   }
@@ -20,13 +21,12 @@ export const Container = styled.div`
   h1 {
     font-size: 54px;
     color: ${props => props.theme.colors.primary};
-    margin-top: 40px;
   }
 
   p {
-    margin-top: 24px;
     font-size: 24px;
     line-height: 32px;
+    ${props => props.theme.colors.text};
   }
 
   header {
@@ -42,6 +42,10 @@ export const Container = styled.div`
     width: 100%;
     height: 6vh;
     margin-bottom: 4vh;
+
+    * {
+      z-index: 3;
+    }
 
     button {
       height: 100%;
@@ -61,18 +65,20 @@ export const Container = styled.div`
       top: 0;
       width: 100vw;
       height: 12vh;
-      z-index: -1;
+      z-index: 1;
       background: #333;
     }
 
     .botoes {
+      z-index: 2;
       display: flex;
       justify-content: space-around;
       margin-top: 2vh;
       * {
         border: 2px solid white;
+        border-color: ${props => props.theme.colors.text};
         background: #333;
-        color: white;
+        color: ${props => props.theme.colors.text};
         padding: 0 5%;
 
         border-radius: 100px;

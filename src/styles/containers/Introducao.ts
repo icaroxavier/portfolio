@@ -6,4 +6,13 @@ export const Introducao = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  background: ${props => props.theme.colors.background};
+  color: ${props => props.theme.colors.text};
+
+  .doguin {
+    * {
+      width: 50vw;
+      height: 50vh;
+    }
+  }
 `
