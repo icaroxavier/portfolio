@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Container } from '../styles/components/Base'
 import { useRouter } from 'next/router'
 import IconeX from '../assets/x.svg'
+import Image from 'next/image'
 
 
 const Base = (props) => {
@@ -67,7 +68,26 @@ const Base = (props) => {
         </div>
       </header>
       <main>{props.children}</main>
-      <footer></footer>
+      <footer>
+        <div className='containerImages'>
+          <div className='divImage'>
+            <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
+              <Image layout='fill' src='/linkedin.png' alt='linkedin logo'></Image>
+            </div>
+          </div>
+          <div className='divImage'>
+            <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
+                <Image layout='fill' src='/mail.png' alt='mail logo'></Image>
+            </div>
+          </div>
+          <div className='divImage'>
+            <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
+              <Image layout='fill' src='/whatsapp.png' alt='whatsapp logo'></Image>
+            </div>
+          </div>
+        </div>
+        <span>© 2021 Xalo Dev. Todos os direitos reservados.</span>
+      </footer>
     </Container>
   )
 }

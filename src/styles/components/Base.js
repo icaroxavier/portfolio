@@ -69,7 +69,7 @@ export const Container = styled.div`
         color: ${props => props.theme.colors.text};
         padding: 0 5%;
         height: auto;
-        box-shadow: 3px 3px 4px black;
+       
        
         align-self: center;
         border-radius: 100px;
@@ -112,5 +112,51 @@ export const Container = styled.div`
     height: 10vh;
     width: 100%;
     background: ${props => props.theme.colors.background};
+    padding: 1vh 25%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1025px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 12px;
+      padding: 1vh 15%;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 12px;
+      padding: 1vh 10%;
+    }
+   
+    span {
+      color: #999;
+      height: min-content;
+      
+    }
+
+    
+
+    .containerImages {
+       flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .divImage {
+        
+        height: 5vh;
+        width: 5vh;
+        margin: 0 5px;
+        background: #222225;
+        box-shadow: 0px 0px 7px black;
+ 
+        padding: 1vh;
+        border-radius: 360px;
+        cursor: pointer;
+      }
+    }
   }
 `
