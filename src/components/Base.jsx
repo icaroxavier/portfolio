@@ -70,21 +70,21 @@ const Base = (props) => {
       <main>{props.children}</main>
       <footer>
         <div className='containerImages'>
-          <div className='divImage'>
+          <a className='divImage' rel='noreferrer' href='https://www.linkedin.com/in/%C3%ADcaro-gabriel-67148b1ba/' target="_blank">
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
               <Image layout='fill' src='/linkedin.png' alt='linkedin logo'></Image>
             </div>
-          </div>
-          <div className='divImage'>
+          </a>
+          <div className='divImage' onClick={() => router.push('/contato')}>
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
                 <Image layout='fill' src='/mail.png' alt='mail logo'></Image>
             </div>
           </div>
-          <div className='divImage'>
+          <a className='divImage' rel='noreferrer' href='https://wa.me/5585998164001?text=Oi,%20tudo%20bem?' target="_blank">
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
               <Image layout='fill' src='/whatsapp.png' alt='whatsapp logo'></Image>
             </div>
-          </div>
+          </a>
         </div>
         <span>© 2021 Xalo Dev. Todos os direitos reservados.</span>
       </footer>
