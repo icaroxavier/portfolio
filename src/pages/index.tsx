@@ -6,7 +6,9 @@ import { Introducao } from '../styles/containers/Introducao'
 import VoxelDogLoader from '../components/voxel-dog-loader'
 const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
   ssr: false,
-  loading: () => <VoxelDogLoader />
+  loading: function load() {
+    return <VoxelDogLoader />
+  }
 })
 
 const Home: React.FC = () => {
