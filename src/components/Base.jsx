@@ -22,7 +22,6 @@ const Base = (props) => {
         <title>Xalo Dev</title>
       </Head>
       <header>
-        <div className="fundoHeader" />
         <motion.div
           style={{ width: 'min-content' }}
           whileHover={{

@@ -9,10 +9,9 @@ export const Introducao = styled.div`
   background: ${props => props.theme.colors.background};
   color: ${props => props.theme.colors.text};
 
-  .doguin {
-    * {
-      width: 50vw;
-      height: 50vh;
-    }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `

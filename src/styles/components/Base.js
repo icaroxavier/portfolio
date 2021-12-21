@@ -4,11 +4,17 @@ export const Container = styled.div`
   width: 100vw;
   height: 100%;
   min-height: 100vh;
-  padding: 2vh 10%;
-  background: ${props => props.theme.colors.background};
-  @media (max-width: 800px) {
-    padding: 2vh 3%;
+  margin: 0;
+  
+  * {
+    margin: 0;
+    padding: 0;
   }
+
+ 
+
+  background: ${props => props.theme.colors.background};
+  
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -20,7 +26,14 @@ export const Container = styled.div`
 
   h1 {
     font-size: 54px;
-    color: ${props => props.theme.colors.primary};
+    
+    background-image: linear-gradient(45deg, #ff003d, #3d00eb);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
   }
 
   p {
@@ -30,63 +43,74 @@ export const Container = styled.div`
   }
 
   header {
+    padding: 1vh 5%;
     display: grid;
+    background: ${props => props.theme.colors.background};
+    
     grid-template-columns: 6fr 2fr;
     @media (max-width: 1025px) {
       grid-template-columns: 3fr 3fr;
     }
     @media (max-width: 700px) {
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 4fr;
     }
 
     width: 100%;
-    height: 6vh;
-    margin-bottom: 4vh;
+    height: 10vh;
+    box-shadow: 0px 0px 7px black;
+    z-index: 2;
 
-    * {
-      z-index: 3;
-    }
+    
 
     button {
-      height: 100%;
+      border: 2px solid white;
+        border-color: ${props => props.theme.colors.text};
+        background: ${props => props.theme.colors.background};
+        color: ${props => props.theme.colors.text};
+        padding: 0 5%;
+        height: auto;
+        box-shadow: 3px 3px 4px black;
+       
+        align-self: center;
+        border-radius: 100px;
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+
     }
 
     svg {
       margin: 0;
       padding: 0;
+      height: 8vh;
       width: auto;
       cursor: pointer;
-      height: 8vh;
+      
     }
 
-    .fundoHeader {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: 12vh;
-      z-index: 1;
-      background: #333;
-    }
+   
 
     .botoes {
-      z-index: 2;
+     
       display: flex;
       justify-content: space-around;
-      margin-top: 2vh;
+     
       * {
-        border: 2px solid white;
-        border-color: ${props => props.theme.colors.text};
-        background: #333;
-        color: ${props => props.theme.colors.text};
-        padding: 0 5%;
-
-        border-radius: 100px;
-        cursor: pointer;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
+       
       }
-      margin-bottom: 2vh;
+     
     }
+  }
+
+  main {
+    flex-grow: 1;
+   
+  }
+
+  footer {
+    box-shadow: 0px 0px 7px black;
+    height: 10vh;
+    width: 100%;
+    background: ${props => props.theme.colors.background};
   }
 `
