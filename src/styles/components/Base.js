@@ -149,8 +149,9 @@ export const Container = styled.div`
     span {
       color: #999;
       height: min-content;
+      font: 400 14px Roboto, sans-serif;
       @media (max-width: 1025px) {
-        font-size: 14px;
+        font-size: 13px;
       }
       @media (max-width: 700px) {
         font-size: 12px;

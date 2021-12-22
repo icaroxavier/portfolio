@@ -63,7 +63,7 @@ const Base = (props) => {
               }
             }}
           >
-            Entre em contato!
+            Entre em contato
           </motion.button>
         </div>
       </header>

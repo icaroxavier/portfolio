@@ -37,25 +37,24 @@ const Contato = () => {
     enviaMensagem(e)
   }
 
-  async function enviaMensagem(e){
+   function enviaMensagem(e){
     e.preventDefault()
     const db = firebase.firestore()
     console.log(nome, email, mensagem)
     if(IsEmail(email) && nome.length > 0 && mensagem.length > 0){
-      const nomeCopy = nome
-      const emailCopy = email
-      const mensagemCopy = mensagem
+      db.collection('mensagens').add({
+        nome,
+        email,
+        mensagem
+      })
+      .then(docRef => {
+        alert('Mensagem enviada!')
+      }).catch(error => {
+        alert('Ocorreu um erro ao enviar sua mensagem')
+      })
       setNome('')
       setEmail('')
       setMensagem('')
-      await db.collection('mensagens').add({
-        nome: nomeCopy,
-        email: emailCopy,
-        mensagem: mensagemCopy
-    })
-    .then(docRef => {
-        alert('Mensagem enviada!')
-    })
     }else if(nome.length < 1){
       alert('Insira um nome!')
     }else if(mensagem.length < 1){
@@ -70,10 +69,6 @@ const Contato = () => {
     return emailRegex.test(emailParametro)
   }
 
-  // const onChangeCaptcha = value => {
-  //   console.log("Captcha value:", value);
-  // }
-
   return (
     <Base>
       <Head>
@@ -82,6 +77,7 @@ const Contato = () => {
       <Contact>
         <div className='content'>
           <h2>Olá, vamos falar sobre o seu projeto!</h2>
+          <p>{'/*'} Caso você prefira entrar em contato por email, envie sua mensagem para esse <u>xalodeveloper@gmail.com</u> {'*/'}</p>
           <motion.form
             initial="hidden"
             animate="show"

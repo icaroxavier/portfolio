@@ -7,7 +7,7 @@ export const Contact = styled.div`
     
     display: flex;
     flex-direction: column;
-    padding: 5% 35%;
+    padding: 3% 35%;
 
     @media (max-width: 1300px) {
         padding: 5% 24%;
@@ -38,8 +38,44 @@ export const Contact = styled.div`
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
             margin-top: 2vh;
-            margin-bottom: 2vh;
+           
             width: 80%;
+            @media (max-width: 600px) {
+                width: 90%;
+            }
+            @media (max-width: 400px) {
+                width: 100%;
+            }
+            margin-bottom: 2vh;
+            text-align: center;
+            
+        }
+
+        p {
+            font-size: 12px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            width: 80%;
+            margin-bottom: 2vh;
+            text-align: center;
+            background: #171717;
+            color: #aaa;
+            padding: 0 5%;
+            border-radius: 10px;
+            @media (max-width: 600px) {
+                width: 90%;
+                font-size: 11px;
+                padding: 1% 9%;
+            }
+            @media (max-width: 400px) {
+                width: 100%;
+                font-size: 11px;
+                padding: 1% 10%;
+            }
+            u {
+                font-size: 12px;
+                
+            }
             
         }
 
@@ -52,13 +88,14 @@ export const Contact = styled.div`
             label {
                 margin-bottom: 4px;
                 width: 100%;
+                font: 400 16px Roboto, sans-serif;
             }
 
             input {
                 width: 100%;
                 background:  ${props => props.theme.colors.background};
                 border-bottom: ;
-                margin-bottom: 3vh;
+                margin-bottom: 2vh;
                 height: 4vh;
                 border: none;
                 border-bottom: 1px solid ${props => props.theme.colors.text};
@@ -72,7 +109,7 @@ export const Contact = styled.div`
                 background:  ${props => props.theme.colors.background};
                 border: 1px solid ${props => props.theme.colors.text};
                 border-radius: 4px;
-                margin-bottom: 5vh;
+                margin-bottom: 3vh;
                 padding: 2%;
                 transition: 0.5s;
             }
@@ -83,7 +120,7 @@ export const Contact = styled.div`
                 align-self: center;
                 padding: 3% 10%;
                 border-radius: 10px;
-                margin-bottom: 2%;
+                margin-bottom: 1%;
             }
 
         }
