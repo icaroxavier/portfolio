@@ -26,7 +26,7 @@ export default function MessagesPage(){
             <MessagesContainer>
                 {process.env.NEXT_PUBLIC_PASSWORD_TEST === password ? 
                 <div className='divMessages'>
-                    {messages.length && messages.map((message, index) => {
+                    {messages.length > 0 && messages.map((message, index) => {
                         return <MessageCard key={index} name={message.name} email={message.email} message={message.content} date={message.date}/>
                     })}
                 </div>
