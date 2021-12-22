@@ -69,7 +69,7 @@ const Home = () => {
             Xalo Dev, ou se preferir, Ícaro, sou um estudante de
             Engenharia de Computação que acabou descobrindo a paixão pela programação
             em sua primeira cadeira da faculdade, desde então, venho me aprimorando
-            nessa atividade que costumo chamar de Arte. Feveireiro de 2021, tiver minha
+            nessa atividade que costumeiramente chamo de Arte. Fevereiro de 2021, tive minha
             primeira oportunidade de trabalhar para uma empresa, desde então nunca
             mais parei, sempre trabalhando, me conectando e me aprimorando no meio.
           </Paragraph>
