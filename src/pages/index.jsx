@@ -71,8 +71,8 @@ const Home = () => {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="80px"
-              maxHeight="80px"
+              maxWidth="100px"
+              maxHeight="100px"
               align='right'
               display="inline-block"
               borderRadius="full"
