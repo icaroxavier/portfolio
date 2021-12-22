@@ -40,9 +40,7 @@ const Contato = () => {
    function enviaMensagem(e){
     e.preventDefault()
     
-    console.log(nome, email, mensagem)
     if(IsEmail(email) && nome.length > 0 && mensagem.length > 0){
-       
       firebase.firestore().collection('messages').add({
         name: nome,
         email,

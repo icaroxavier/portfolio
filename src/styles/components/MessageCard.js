@@ -22,6 +22,7 @@ export const MessageCardComponent = styled.div`
         color: ${props => props.theme.colors.text}E6;
         
     }
+    
     p {
         font-size: 14px;
         color: ${props => props.theme.colors.text}CC;
