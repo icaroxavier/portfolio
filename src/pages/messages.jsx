@@ -21,6 +21,8 @@ export default function MessagesPage(){
         setMessages(messagesTemp)
     }
 
+    console.log(messages)
+
     return(
         <Base>
             <MessagesContainer>
