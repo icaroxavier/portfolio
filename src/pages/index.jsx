@@ -3,9 +3,14 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Base from '../components/Base'
 import { Introducao } from '../styles/containers/Introducao'
-import VoxelDogLoader from '../components/voxel-dog-loader'
+import VoxelDogLoader from '../components/Voxel-dog-loader'
 import { motion } from 'framer-motion'
-const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
+import Section from '../components/Section'
+import { BioSection, BioYear, BioDescription } from '../components/bio'
+import Paragraph from '../components/paragraph'
+import { Heading } from '@chakra-ui/react'
+
+const LazyVoxelDog = dynamic(() => import('../components/Voxel-dog'), {
   ssr: false,
   loading: () => <VoxelDogLoader />
 })
@@ -50,7 +55,71 @@ const Home = () => {
           <motion.h1 variants={itemH1}>Xalo Dev</motion.h1>
           <motion.p variants={itemP}>Full-Stack Web Develeper.</motion.p>
         </motion.div>
-        <LazyVoxelDog />
+        <LazyVoxelDog/>
+
+        <div className="content">
+
+        
+        
+        <Section delay={0.1}>
+          <Heading as="h3" variant="section-title">
+            Sobre
+          </Heading>
+          <Paragraph>
+            Xalo Dev, ou se preferir, Ícaro, sou um estudante de
+            Engenharia de Computação que acabou descobrindo a paixão pela programação
+            em sua primeira cadeira da faculdade, desde então, venho me aprimorando
+            nessa atividade que costumo chamar de Arte. Feveireiro de 2021, tiver minha
+            primeira oportunidade de trabalhar para uma empresa, desde então nunca
+            mais parei, sempre trabalhando, me conectando e me aprimorando no meio.
+          </Paragraph>
+        </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>06/2001</BioYear>
+          <BioDescription>Nasci em Fortaleza - Ceará, Brasil.</BioDescription>
+        </BioSection>
+        <BioSection>
+          <BioYear>02/2020</BioYear>
+          <BioDescription>Entrei para o curso de Engenharia de Computação, no IFCE, campus Fortaleza.</BioDescription>
+        </BioSection>
+        <BioSection>
+          <BioYear>02/2021</BioYear>
+          <BioDescription>Começei meu primeiro estágio na RAV Tecnologia.</BioDescription>
+        </BioSection>
+        <BioSection>
+          <BioYear>07/2021</BioYear>
+          <BioDescription>Entrei para um projeto do Polo Inovador na Faculdade.</BioDescription>
+        </BioSection>
+        <BioSection>
+          <BioYear>09/2021</BioYear>
+          <BioDescription>Concluí o estágio na RAV Tecnologia.</BioDescription>
+        </BioSection>
+        <BioSection>
+          <BioYear>10/2021</BioYear>
+          <BioDescription>Comecei a trabalhar para a Inventhus(Certare).</BioDescription>
+        </BioSection>
+      </Section>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Eu ♥
+        </Heading>
+        <Paragraph>
+          Programar, Jogar, Música, Dirigir e Viajar.
+        </Paragraph>
+      </Section>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Projetos pessoais
+        </Heading>
+       
+      </Section>
+      </div>
+      
       </Introducao>
     </Base>
   )

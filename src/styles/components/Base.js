@@ -125,6 +125,7 @@ export const Container = styled.div`
     width: 100%;
     background: ${props => props.theme.colors.background};
     padding: 1vh 25%;
+    z-index: 2;
     
     display: flex;
     flex-direction: column;
