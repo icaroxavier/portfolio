@@ -38,6 +38,18 @@ export const MessagesContainer = styled.div`
     .divMessages {
         margin-top:4vh;
         width: 30vw;
+        @media (max-width: 1025px) {
+            width: 50vw;
+           
+        }
+        @media (max-width: 700px) {
+            width: 75vw;
+            
+        }
+        @media (max-width: 300px) {
+            width: 90vw;
+            
+        }
         height: 100%;
     }
 
