@@ -3,14 +3,14 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Base from '../components/Base'
 import { Introducao } from '../styles/containers/Introducao'
-import VoxelDogLoader from '../components/Voxel-dog-loader'
+import VoxelDogLoader from '../components/voxel-dog-loader'
 import { motion } from 'framer-motion'
 import Section from '../components/Section'
 import { BioSection, BioYear, BioDescription } from '../components/bio'
 import Paragraph from '../components/paragraph'
 import { Heading } from '@chakra-ui/react'
 
-const LazyVoxelDog = dynamic(() => import('../components/Voxel-dog'), {
+const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
   ssr: false,
   loading: () => <VoxelDogLoader />
 })
