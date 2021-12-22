@@ -53,7 +53,7 @@ const Base = (props) => {
             Meu CV
           </motion.button>
           <motion.button
-            onClick={() => router.push('/contato')}
+            onClick={() => router.push('/contact')}
             whileHover={{
               position: 'relative',
               zIndex: 1,

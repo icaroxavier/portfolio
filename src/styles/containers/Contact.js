@@ -121,6 +121,8 @@ export const Contact = styled.div`
                 padding: 3% 10%;
                 border-radius: 10px;
                 margin-bottom: 1%;
+                font-size: 20px;
+                font-weight: 500;
             }
 
         }

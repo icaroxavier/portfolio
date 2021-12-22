@@ -9,6 +9,17 @@ import { motion } from 'framer-motion'
 
 
 
+const itemH2 = {
+  hidden: { opacity: 0 },
+  show: { 
+    opacity: 1, 
+    transition: { delay: 0.3 }}
+}
+
+const itemP = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 }
+}
 
 
 const container = {
@@ -75,15 +86,15 @@ const Contato = () => {
         <title>Contato - Xalo Dev</title>
       </Head>
       <Contact>
-        <div className='content'>
-          <h2>Olá, vamos falar sobre o seu projeto!</h2>
-          <p>{'/*'} Caso você prefira entrar em contato por email, envie sua mensagem para esse <u>xalodeveloper@gmail.com</u> {'*/'}</p>
-          <motion.form
-            initial="hidden"
-            animate="show"
-            variants={container}
-            onSubmit={handleSubmit}
-          >
+        <motion.div 
+          className='content'  
+          initial="hidden"
+          animate="show"
+          variants={container}
+        >
+          <motion.h2 variants={item}>Olá, vamos falar sobre o seu projeto!</motion.h2>
+          <motion.p variants={item}>{'/*'} Caso você prefira entrar em contato por email, envie sua mensagem para esse <u>xalodeveloper@gmail.com</u> {'*/'}</motion.p>
+          <motion.form onSubmit={handleSubmit}>
             <motion.label variants={item} htmlFor='nome'>Seu nome</motion.label>
             <motion.input variants={item} type='text' id='nome' name='nome' value={nome} onChange={e => setNome(e.target.value)}/>
             <motion.label variants={item} htmlFor='email'>Seu email</motion.label>
@@ -110,7 +121,7 @@ const Contato = () => {
               Enviar
             </motion.button>
           </motion.form>
-        </div>
+        </motion.div>
       </Contact>
     </Base>
   )
