@@ -4,7 +4,7 @@ import { MessageCardComponent } from "../styles/components/MessageCard";
 
 export default function MessageCard(props){
 
-    const [dateWithFormat, setDateWithFormat] = useState(null)
+    const [dateWithFormat, setDateWithFormat] = useState('')
 
     useEffect(() => {
         const date = new Date(props.date.toMillis())
