@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 import Section from '../components/Section'
 import { BioSection, BioYear, BioDescription } from '../components/bio'
 import Paragraph from '../components/paragraph'
-import { Heading } from '@chakra-ui/react'
+import { Heading, Image } from '@chakra-ui/react'
 
 const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
   ssr: false,
@@ -65,14 +65,31 @@ const Home = () => {
           <Heading as="h3" variant="section-title">
             Sobre
           </Heading>
-          <Paragraph>
-            Xalo Dev, ou se preferir, Ícaro, sou um estudante de
-            Engenharia de Computação que acabou descobrindo a paixão pela programação
-            em sua primeira cadeira da faculdade, desde então, venho me aprimorando
-            nessa atividade que costumeiramente chamo de Arte. Fevereiro de 2021, tive minha
-            primeira oportunidade de trabalhar para uma empresa, desde então nunca
-            mais parei, sempre trabalhando, me conectando e me aprimorando no meio.
-          </Paragraph>
+          <div className='aboutDiv'>
+            <Paragraph>
+            <Image
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="solid"
+              maxWidth="80px"
+              maxHeight="80px"
+              align='right'
+              display="inline-block"
+              borderRadius="full"
+              src="/me.jpg"
+              alt="Profile image"
+            />
+              Xalo Dev, ou se preferir, Ícaro, sou um estudante de
+              Engenharia de Computação que acabou descobrindo a paixão pela programação
+              em sua primeira cadeira da faculdade, desde então, venho me aprimorando
+              nessa atividade que costumeiramente chamo de Arte. Fevereiro de 2021, tive minha
+              primeira oportunidade de trabalhar para uma empresa, desde então nunca
+              mais parei, sempre trabalhando e cada vez mais me conectando, me apaixonando 
+              e me aprimorando no meio.
+            </Paragraph>
+            
+          </div>
+          
         </Section>
 
       <Section delay={0.2}>

@@ -33,6 +33,8 @@ export const Introducao = styled.div`
 
   }
 
+  
+
   h3 {
     font-size: 24px;
     text-decoration: underline;
@@ -42,6 +44,10 @@ export const Introducao = styled.div`
   p {
     font: 300 16px 'Raleway', sans-serif;
     text-align: justify;
+    img {
+      float: right;
+      margin-left: 3%;
+    }
   }
   .titulo {
     display: flex;
