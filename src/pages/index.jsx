@@ -109,7 +109,7 @@ const Home = () => {
           Eu ♥
         </Heading>
         <Paragraph>
-          Programar, Jogar, Música, Dirigir e Viajar.
+          Programar, Jogar, Escutar Música, Dirigir e Viajar.
         </Paragraph>
       </Section>
       <Section delay={0.1}>
