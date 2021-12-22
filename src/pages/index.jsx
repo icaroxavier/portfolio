@@ -89,11 +89,11 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>02/2021</BioYear>
-          <BioDescription>Começei meu primeiro estágio na RAV Tecnologia.</BioDescription>
+          <BioDescription>Comecei meu primeiro estágio na RAV Tecnologia.</BioDescription>
         </BioSection>
         <BioSection>
           <BioYear>07/2021</BioYear>
-          <BioDescription>Entrei para um projeto do Polo Inovador na Faculdade.</BioDescription>
+          <BioDescription>Entrei para um projeto do Polo Inovador no IFCE.</BioDescription>
         </BioSection>
         <BioSection>
           <BioYear>09/2021</BioYear>
