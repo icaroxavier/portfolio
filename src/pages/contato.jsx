@@ -39,13 +39,15 @@ const Contato = () => {
 
    function enviaMensagem(e){
     e.preventDefault()
-    const db = firebase.firestore()
+    
     console.log(nome, email, mensagem)
     if(IsEmail(email) && nome.length > 0 && mensagem.length > 0){
-      db.collection('mensagens').add({
-        nome,
+       
+      firebase.firestore().collection('messages').add({
+        name: nome,
         email,
-        mensagem
+        content: mensagem,
+        date: new Date()
       })
       .then(docRef => {
         alert('Mensagem enviada!')
