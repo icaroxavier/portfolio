@@ -156,7 +156,10 @@ const Home = () => {
           
         </p>
         <p style={{marginTop: '1vh'}}>
-          E-mail: xalodeveloper@gmail.com
+          <u>E-mail:</u> xalodeveloper@gmail.com
+        </p>
+        <p style={{marginTop: '1vh'}}>
+          <u>Telefone:</u> (85) 9 9816-4001
         </p>
         <p style={{marginTop: '1vh'}}>
           <Link href={'https://wa.me/5585998164001?text=Oi,%20tudo%20bem?'}><a>Whatsapp</a></Link>

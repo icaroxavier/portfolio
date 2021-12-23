@@ -43,6 +43,7 @@ export const Introducao = styled.div`
   a {
         color: #99f;
         text-decoration: underline;
+        font-weight: 500;
     }
 
   p {
@@ -51,6 +52,10 @@ export const Introducao = styled.div`
     img {
       float: right;
       margin-left: 3%;
+    }
+
+    u {
+      font-weight: 500;
     }
   }
   .titulo {
