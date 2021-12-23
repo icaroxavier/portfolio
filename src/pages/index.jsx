@@ -9,6 +9,9 @@ import Section from '../components/Section'
 import { BioSection, BioYear, BioDescription } from '../components/bio'
 import Paragraph from '../components/paragraph'
 import { Heading, Image } from '@chakra-ui/react'
+import ImageNext from 'next/image'
+import Project from '../components/Project'
+import Link from 'next/link'
 
 const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
   ssr: false,
@@ -133,8 +136,35 @@ const Home = () => {
         <Heading as="h3" variant="section-title">
           Projetos pessoais
         </Heading>
-       
+        <Project 
+          imagePath='/reminder.jpg' 
+          title='reminder-task-manager' 
+          description="Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio, 
+            se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também, 
+            foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo."
+          link='reminder-task-manager.vercel.app'  
+        />
+        
       </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Contato
+        </Heading>
+        <p style={{marginTop: '2vh'}}>
+          Você pode me contatar usando próprio website,{' '}
+          <Link href={'/contact'}><a>clicando aqui</a></Link>. Ou se prefir,
+          
+        </p>
+        <p style={{marginTop: '1vh'}}>
+          E-mail: xalodeveloper@gmail.com
+        </p>
+        <p style={{marginTop: '1vh'}}>
+          <Link href={'https://wa.me/5585998164001?text=Oi,%20tudo%20bem?'}><a>Whatsapp</a></Link>
+        </p>
+        
+      </Section>
+
+
       </div>
       
       </Introducao>

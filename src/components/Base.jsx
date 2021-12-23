@@ -68,7 +68,7 @@ const Base = (props) => {
         </div>
       </header>
       <main>{props.children}</main>
-      <footer>
+      <footer style={{marginTop: '5vh'}}>
         <div className='containerImages'>
           <motion.a 
             className='divImage' 

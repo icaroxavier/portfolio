@@ -6,6 +6,9 @@ export const Container = styled.div`
   min-height: 100vh;
   margin: 0;
   
+    
+     
+  
   * {
     margin: 0;
     padding: 0;
@@ -46,7 +49,7 @@ export const Container = styled.div`
   header {
     padding: 1vh 5%;
     display: grid;
-    background: ${props => props.theme.colors.background};
+    
     
     grid-template-columns: 6fr 2fr;
     @media (max-width: 1025px) {
@@ -116,7 +119,9 @@ export const Container = styled.div`
 
   main {
     flex-grow: 1;
-   
+    /* background-image: url('background.jpg');
+    background-repeat: repeat;
+    background-position: 0% 0%; */
   }
 
   footer {

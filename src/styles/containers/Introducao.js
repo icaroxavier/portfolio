@@ -40,6 +40,10 @@ export const Introducao = styled.div`
     text-decoration: underline;
     margin-bottom: 1vh;
   }
+  a {
+        color: #99f;
+        text-decoration: underline;
+    }
 
   p {
     font: 300 16px 'Raleway', sans-serif;
@@ -54,4 +58,7 @@ export const Introducao = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+
+  
 `
