@@ -161,7 +161,7 @@ const Home = () => {
           <u>Telefone:</u> (85) 9 9816-4001
         </p>
         <p style={{marginTop: '1vh'}}>
-          <Link href={'https://wa.me/5585998164001?text=Oi,%20tudo%20bem?'}><a>Whatsapp</a></Link>
+          <a href={'https://wa.me/5585998164001?text=Oi,%20tudo%20bem?'} target='_blank' rel="noreferrer">Whatsapp</a>
         </p>
         
       </Section>
