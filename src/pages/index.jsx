@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import Base from '../components/base'
+import BaseLayout from '../components/base-layout'
 import { MainContentContainer } from '../styles/containers/main-content.style'
 import VoxelDogLoader from '../components/voxel-dog-loader'
 import { motion } from 'framer-motion'
@@ -43,7 +43,7 @@ const itemP = {
 
 const Home = () => {
   return (
-    <Base>
+    <BaseLayout>
       <Head>
         <title>Home - Xalo Dev</title>
       </Head>
@@ -170,7 +170,7 @@ const Home = () => {
       </div>
       
       </MainContentContainer>
-    </Base>
+    </BaseLayout>
   )
 }
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Base from '../components/base'
+import BaseLayout from '../components/base-layout'
 import Head from 'next/head'
 import firebase from 'firebase/app'
 import { Contact } from '../styles/containers/contact.style'
@@ -64,7 +64,7 @@ const Contato = () => {
   }
 
   return (
-    <Base>
+    <BaseLayout>
       <Head>
         <title>Contato - Xalo Dev</title>
       </Head>
@@ -106,7 +106,7 @@ const Contato = () => {
           </motion.form>
         </motion.div>
       </Contact>
-    </Base>
+    </BaseLayout>
   )
 }
 

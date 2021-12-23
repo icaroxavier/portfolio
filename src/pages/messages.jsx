@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Base from '../components/Base'
+import BaseLayout from '../components/base-layout'
 import { MessagesContainer } from '../styles/containers/messages.style'
 import firebase from 'firebase/app'
 import MessageCard from '../components/message-card'
@@ -21,7 +21,7 @@ export default function MessagesPage(){
     }
 
     return(
-        <Base>
+        <BaseLayout>
             <MessagesContainer>
                 {process.env.NEXT_PUBLIC_PASSWORD_TEST === password ? 
                 <div className='divMessages'>
@@ -33,6 +33,6 @@ export default function MessagesPage(){
                 <input className='passwordTeste' type='password' value={password} onChange={e => setPassword(e.target.value)}/>
                 }
             </MessagesContainer>
-        </Base>
+        </BaseLayout>
     )
 }
