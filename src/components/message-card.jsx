@@ -1,5 +1,5 @@
 import { useEffect, useState  } from "react";
-import { MessageCardComponent } from "../styles/components/MessageCard";
+import { MessageCardComponent } from "../styles/components/message-card.style";
 
 export default function MessageCard(props){
 

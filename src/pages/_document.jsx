@@ -1,7 +1,5 @@
 import React from 'react'
 import Document, {
-  DocumentInitialProps,
-  DocumentContext,
   Html,
   Head,
   Main,

@@ -1,26 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import Base from '../components/Base'
+import React, { useState } from 'react'
+import Base from '../components/base'
 import Head from 'next/head'
 import firebase from 'firebase/app'
-import { Contact } from '../styles/containers/Contact'
+import { Contact } from '../styles/containers/contact.style'
 import { motion } from 'framer-motion'
-
-
-
-
-
-const itemH2 = {
-  hidden: { opacity: 0 },
-  show: { 
-    opacity: 1, 
-    transition: { delay: 0.3 }}
-}
-
-const itemP = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1 }
-}
-
 
 const container = {
   hidden: { opacity: 0 },
@@ -93,7 +76,7 @@ const Contato = () => {
           variants={container}
         >
           <motion.h2 variants={item}>Olá, vamos falar sobre o seu projeto!</motion.h2>
-          <motion.p variants={item}>{'/*'} Caso você prefira entrar em contato por email, envie sua mensagem para esse <u>xalodeveloper@gmail.com</u> {'*/'}</motion.p>
+          <motion.p variants={item}>{'/*'} Caso você prefira entrar em contato por email, envie sua mensagem para  <u>xalodeveloper@gmail.com</u> {'*/'}</motion.p>
           <motion.form onSubmit={handleSubmit}>
             <motion.label variants={item} htmlFor='nome'>Seu nome</motion.label>
             <motion.input variants={item} type='text' id='nome' name='nome' value={nome} onChange={e => setNome(e.target.value)}/>

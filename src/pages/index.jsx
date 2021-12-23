@@ -1,16 +1,15 @@
 import React from 'react'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import Base from '../components/Base'
-import { Introducao } from '../styles/containers/Introducao'
+import Base from '../components/base'
+import { MainContentContainer } from '../styles/containers/main-content.style'
 import VoxelDogLoader from '../components/voxel-dog-loader'
 import { motion } from 'framer-motion'
-import Section from '../components/Section'
+import Section from '../components/section'
 import { BioSection, BioYear, BioDescription } from '../components/bio'
 import Paragraph from '../components/paragraph'
 import { Heading, Image } from '@chakra-ui/react'
-import ImageNext from 'next/image'
-import Project from '../components/Project'
+import Project from '../components/project'
 import Link from 'next/link'
 
 const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
@@ -48,7 +47,7 @@ const Home = () => {
       <Head>
         <title>Home - Xalo Dev</title>
       </Head>
-      <Introducao>
+      <MainContentContainer>
         <motion.div 
           className='titulo'
           initial="hidden"
@@ -142,7 +141,7 @@ const Home = () => {
           description="Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio, 
             se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também, 
             foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo."
-          link='reminder-task-manager.vercel.app'  
+          link='https://reminder-task-manager.vercel.app'  
         />
         
       </Section>
@@ -170,7 +169,7 @@ const Home = () => {
 
       </div>
       
-      </Introducao>
+      </MainContentContainer>
     </Base>
   )
 }

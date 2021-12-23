@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import Base from '../components/Base'
-import { MessagesContainer } from '../styles/containers/Messages'
+import { MessagesContainer } from '../styles/containers/messages.style'
 import firebase from 'firebase/app'
-import MessageCard from '../components/MessageCard'
-
+import MessageCard from '../components/message-card'
 
 
 export default function MessagesPage(){

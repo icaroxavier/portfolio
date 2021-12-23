@@ -1,10 +1,9 @@
 import React from 'react'
-import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChakraProvider } from '@chakra-ui/react'
 
-import GlobalStyle from '../styles/global'
+import GlobalStyle from '../styles/global.style'
 import theme from '../styles/theme'
 
 import '../firebase/config'

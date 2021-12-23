@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
-import { Container } from '../styles/components/Base'
+import { Container } from '../styles/containers/base.style'
 import { useRouter } from 'next/router'
-import IconeX from '../assets/x.svg'
+import X from '../assets/x.svg'
 import Image from 'next/image'
 
 
@@ -35,7 +35,7 @@ const Base = (props) => {
             }
           }}
         >
-          <IconeX onClick={() => router.push('/')} />
+          <X onClick={() => router.push('/')} />
         </motion.div>
 
         <div className="botoes">
