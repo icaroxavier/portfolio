@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
-import { Container } from '../styles/containers/base.style'
+import { BaseLayoutContainer } from '../styles/containers/base-layout.style'
 import { useRouter } from 'next/router'
 import X from '../assets/x.svg'
 import Image from 'next/image'
@@ -18,7 +18,7 @@ const Base = (props) => {
   }
 
   return (
-    <Container>
+    <BaseLayoutContainer>
       <Head>
         <title>Xalo Dev</title>
       </Head>
@@ -127,7 +127,7 @@ const Base = (props) => {
         </div>
         <span>© 2021 Xalo Dev. Todos os direitos reservados.</span>
       </footer>
-    </Container>
+    </BaseLayoutContainer>
   )
 }
 
