@@ -141,7 +141,22 @@ const Home = () => {
           description="Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio, 
             se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também, 
             foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo."
-          link='https://reminder-task-manager.vercel.app'  
+          link='https://reminder-task-manager.vercel.app'
+          padding='100%'  
+        />
+        <Project 
+          imagePath='/morango.png' 
+          title='moRANGO' 
+          description="Esse projeto se trata de um aplicativo em Flutter, que tem a finalidade de procurar receitas com todos
+          os ingrediente que você já possui em casa ou pretende comprar. Fiz o mesmo com meus colegas da faculdade em um projeto
+          da cadeira de Programação orientada a objetos."
+          padding='178%'  
+        />
+        <Project 
+          imagePath='/portfolio.png' 
+          title='Portfólio online' 
+          description="O projeto do website que você está acessando agora, desenvolvido inteiramente por mim em Next.js, com Firebase."
+          padding='115%'  
         />
         
       </Section>

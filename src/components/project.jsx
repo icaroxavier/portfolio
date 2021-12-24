@@ -3,7 +3,7 @@ import { ProjectContainer } from "../styles/components/project.style";
 
 export default function Project(props){
     return(
-        <ProjectContainer>
+        <ProjectContainer padding={props.padding}>
             <h2>{' - '}{props.title}</h2>
             <div className="imageContainer">
                 <Image 
