@@ -18,17 +18,32 @@ export const MainContentContainer = styled.div`
     padding: 0% 35%;
     position: relative;
     z-index: 2;
-    @media (max-width: 1300px) {
+    @media (max-width: 1600px) {
+      padding: 0% 32%;
+    }
+    @media (max-width: 1500px) {
+      padding: 0% 30%;
+    }
+    @media (max-width: 1400px) {
       padding: 0% 25%;
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 1300px) {
       padding: 0% 20%;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 1300px) {
+      padding: 0% 20%;
+    }
+    @media (max-width: 1100px) {
+      padding: 0% 18%;
+    }
+    @media (max-width: 800px) {
       padding: 0% 15%;
     }
+    @media (max-width: 450px) {
+      padding: 0% 10%;
+    }
     @media (max-width: 400px) {
-      padding: 0% 15%;
+      padding: 0% 8%;
     }
 
   }
