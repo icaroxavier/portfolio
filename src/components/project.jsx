@@ -15,7 +15,7 @@ export default function Project(props){
                 />
             </div>
             <p>{' > '}{props.description}</p>
-            {props.link && <a href={props.link} target="_blank" rel="noreferrer">{' > '}Link de acesso ao projeto</a>}
+            {props.link && <a href={props.link} target="_blank" rel="noreferrer">{' > '}Link de acesso ao projeto no GitHub</a>}
         </ProjectContainer>
     )
 }
