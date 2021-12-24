@@ -2,11 +2,23 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChakraProvider } from '@chakra-ui/react'
+import AlertTemplate from 'react-alert-template-basic'
+import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 
 import GlobalStyle from '../styles/global.style'
 import theme from '../styles/theme'
 
 import '../firebase/config'
+
+const options = {
+ 
+  position: positions.TOP_CENTER,
+  timeout: 5000,
+  offset: '30px',
+  
+  transition: transitions.SCALE
+}
+
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -31,7 +43,9 @@ const MyApp = ({ Component, pageProps }) => {
               }
             }}
           >
-            <Component {...pageProps} />
+            <AlertProvider template={AlertTemplate} {...options}>
+              <Component {...pageProps} />
+            </AlertProvider>
           </motion.div>
         </AnimatePresence>
         <GlobalStyle />

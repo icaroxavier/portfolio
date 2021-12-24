@@ -4,6 +4,9 @@ import Head from 'next/head'
 import firebase from 'firebase/app'
 import { Contact } from '../styles/containers/contact.style'
 import { motion } from 'framer-motion'
+import { useAlert } from 'react-alert'
+
+
 
 const container = {
   hidden: { opacity: 0 },
@@ -20,12 +23,19 @@ const item = {
   show: { opacity: 1 }
 }
 
+
+
 const Contato = () => {
 
   const [nome, setNome] = useState('')
   const [email, setEmail] = useState('')
   const [mensagem, setMensagem] = useState('')
 
+  const customAlert = useAlert()
+
+  function handleAlert(message){
+    customAlert.show(<div style={{ color:'#e1e1e6', font: '500 16px Roboto, sans-serif', padding: '5% 2%'}}>{message}</div>)
+  }
 
   const handleSubmit = e => {
     enviaMensagem(e)
@@ -42,19 +52,19 @@ const Contato = () => {
         date: new Date()
       })
       .then(docRef => {
-        alert('Mensagem enviada!')
+        handleAlert('Mensagem enviada!')
       }).catch(error => {
-        alert('Ocorreu um erro ao enviar sua mensagem')
+        handleAlert('Ocorreu um erro ao enviar sua mensagem')
       })
       setNome('')
       setEmail('')
       setMensagem('')
     }else if(nome.length < 1){
-      alert('Insira um nome!')
+      handleAlert('Insira um nome!')
     }else if(mensagem.length < 1){
-      alert('Insira uma mensagem!')
+      handleAlert('Insira uma mensagem!')
     }else {
-      alert('Insira um e-mail válido!')
+      handleAlert('Insira um e-mail válido!')
     }
   }
 

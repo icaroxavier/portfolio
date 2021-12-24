@@ -100,7 +100,7 @@ export const Contact = styled.div`
                 border: none;
                 border-bottom: 1px solid ${props => props.theme.colors.text};
                 border-radius: 3px;
-                
+                font: 400 16px Roboto, sans-serif;
                 padding: 1% 2%;
                 transition: 0.5s;
             }
@@ -112,6 +112,7 @@ export const Contact = styled.div`
                 margin-bottom: 3vh;
                 padding: 2%;
                 transition: 0.5s;
+                font: 400 16px Roboto, sans-serif;
             }
 
             button {
