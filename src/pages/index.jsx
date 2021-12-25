@@ -164,6 +164,17 @@ const Home = () => {
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
+          Informações
+        </Heading>
+        <Paragraph>
+          Para mais informações sobre o meu trabalho como profissional da área, você pode {' '}
+          <a href='/curriculo-xalo-dev.pdf' download='curriculo-xalo-dev.pdf' target='_blank' rel="noreferrer">clicar aqui</a>{' '}
+           para visualizar meu currículo e ver minha trajetória profissional, além de conhecer minhas habilidades específicas.
+        </Paragraph>
+        
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
           Contato
         </Heading>
         <p style={{marginTop: '2vh'}}>
@@ -182,6 +193,7 @@ const Home = () => {
         </p>
         
       </Section>
+      
 
 
       </div>
