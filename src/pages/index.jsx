@@ -231,6 +231,15 @@ const Home = () => {
         <p style={{marginTop: '1vh'}}>
           <a href={'https://wa.me/5585998164001?text=Oi,%20tudo%20bem?'} target='_blank' rel="noreferrer">Whatsapp</a>
         </p>
+        <p style={{marginTop: '1vh'}}>
+          <a
+            href={'https://www.linkedin.com/in/%C3%ADcaro-gabriel-67148b1ba/'}
+            target='_blank'
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+        </p>
         
       </Section>
       
