@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import BaseLayout from '../components/base-layout'
-import { MainContentContainer } from '../styles/containers/main-content.style'
+import {MainContentContainer, SelectorContainer, SelectorArrow, SelectorBall} from '../styles/containers/main-content.style'
 import VoxelDogLoader from '../components/voxel-dog-loader'
 import { motion } from 'framer-motion'
 import Section from '../components/section'
@@ -39,9 +39,72 @@ const itemP = {
   show: { opacity: 1 }
 }
 
-
+const projects = [
+  <Project
+      key={0}
+      imagePath='/reminder.jpg'
+      title='reminder-task-manager'
+      description="Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio,
+        se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também,
+        foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo."
+      link='https://github.com/XaloDev/reminder-task-manager'
+      padding='100%'
+  />,
+  <Project
+      key={1}
+      imagePath='/morango.png'
+      title='moRANGO'
+      description="Esse projeto se trata de um aplicativo em Flutter, que tem a finalidade de procurar receitas com todos
+      os ingrediente que você já possui em casa ou pretende comprar. Fiz o mesmo com meus colegas da faculdade em um projeto
+      da cadeira de Programação orientada a objetos."
+      link='https://github.com/XaloDev/moRANGO'
+      padding='178%'
+  />,
+  <Project
+      key={2}
+      imagePath='/portfolio.png'
+      title='Portfólio online'
+      description="O projeto do website que você está acessando agora, desenvolvido inteiramente por mim em Next.js, com Firebase."
+      link='https://github.com/XaloDev/portfolio'
+      padding='115%'
+  />
+]
 
 const Home = () => {
+
+  const [selectedProject, setSelectedProject] = useState(0)
+
+  function renderSelectedProject(){
+    return projects[selectedProject]
+  }
+
+  const Selector = () => (
+    <SelectorContainer>
+      <SelectorArrow
+          className={'no-select'}
+          onClick={ignore => selectedProject > 0 && setSelectedProject(selectedProject - 1)}
+      >
+        {'<'}
+      </SelectorArrow>
+      {projects.map((project, index) => {
+        return (
+            <SelectorBall
+                onClick={ignore => setSelectedProject(index)}
+                selected={project.key === selectedProject.toString()}
+                key={project.key}
+                className={'no-select'}
+            />
+        )
+      })}
+      <SelectorArrow
+          className={'no-select'}
+          onClick={ignore => selectedProject < (projects.length - 1) && setSelectedProject(selectedProject + 1)}
+      >
+        {'>'}
+      </SelectorArrow>
+    </SelectorContainer>
+  )
+
   return (
     <BaseLayout>
       <Head>
@@ -112,7 +175,7 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>07/2021</BioYear>
-          <BioDescription>Entrei para um projeto do Polo Inovador no IFCE.</BioDescription>
+          <BioDescription>Entrei para um projeto da EMBRAPII no Polo Inovador do IFCE.</BioDescription>
         </BioSection>
         <BioSection>
           <BioYear>09/2021</BioYear>
@@ -135,32 +198,9 @@ const Home = () => {
         <Heading as="h3" variant="section-title">
           Projetos pessoais
         </Heading>
-        <Project 
-          imagePath='/reminder.jpg' 
-          title='reminder-task-manager' 
-          description="Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio, 
-            se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também, 
-            foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo."
-          link='https://github.com/XaloDev/reminder-task-manager'
-          padding='100%'  
-        />
-        <Project 
-          imagePath='/morango.png' 
-          title='moRANGO' 
-          description="Esse projeto se trata de um aplicativo em Flutter, que tem a finalidade de procurar receitas com todos
-          os ingrediente que você já possui em casa ou pretende comprar. Fiz o mesmo com meus colegas da faculdade em um projeto
-          da cadeira de Programação orientada a objetos."
-          link='https://github.com/XaloDev/moRANGO'
-          padding='178%'  
-        />
-        <Project 
-          imagePath='/portfolio.png' 
-          title='Portfólio online' 
-          description="O projeto do website que você está acessando agora, desenvolvido inteiramente por mim em Next.js, com Firebase."
-          link='https://github.com/XaloDev/portfolio'
-          padding='115%'  
-        />
-        
+        <Selector/>
+        {renderSelectedProject()}
+        <Selector/>
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
