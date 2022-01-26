@@ -42,6 +42,15 @@ const itemP = {
 const projects = [
   <Project
       key={0}
+      imagePath='/better-date-functions.png'
+      title='better-date-functions'
+      description="Minha primeira library em JavaScript para ajudar no desenvolvimento de sistemas que manipulam datas, tendo 
+      várias funções prontas para conseguir detalhes sobre os dias, meses e anos."
+      link='https://github.com/XaloDev/better-date-functions'
+      padding='79%'
+  />,
+  <Project
+      key={1}
       imagePath='/reminder.jpg'
       title='reminder-task-manager'
       description="Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio,
@@ -51,7 +60,7 @@ const projects = [
       padding='100%'
   />,
   <Project
-      key={1}
+      key={2}
       imagePath='/morango.png'
       title='moRANGO'
       description="Esse projeto se trata de um aplicativo em Flutter, que tem a finalidade de procurar receitas com todos
@@ -61,7 +70,7 @@ const projects = [
       padding='178%'
   />,
   <Project
-      key={2}
+      key={3}
       imagePath='/portfolio.png'
       title='Portfólio online'
       description="O projeto do website que você está acessando agora, desenvolvido inteiramente por mim em Next.js, com Firebase."
