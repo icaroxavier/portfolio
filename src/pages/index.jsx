@@ -71,6 +71,15 @@ const projects = [
   />,
   <Project
       key={3}
+      imagePath='/workshop-springboot2-jpa.png'
+      title='workshop-springboot2-jpa'
+      description="Esse projeto se trata de um CRUD feito com o Spring Boot baseado no sistema de um supermercado online, com
+      a finalidade de firmar ainda mais minhas habilidades em Java e Spring."
+      link='https://github.com/XaloDev/workshop-springboot2-jpa'
+      padding='71%'
+  />,
+  <Project
+      key={4}
       imagePath='/portfolio.png'
       title='Portfólio online'
       description="O projeto do website que você está acessando agora, desenvolvido inteiramente por mim em Next.js, com Firebase."
@@ -217,7 +226,7 @@ const Home = () => {
         </Heading>
         <Paragraph>
           Para mais informações sobre o meu trabalho como profissional da área, você pode {' '}
-          <a href='/curriculo-xalo-dev.pdf' download='curriculo-xalo-dev.pdf' target='_blank' rel="noreferrer">clicar aqui</a>{' '}
+          <a href='/cv-icaro-gabriel.pdf' download='cv-icaro-gabriel.pdf' target='_blank' rel="noreferrer">clicar aqui</a>{' '}
            para visualizar meu currículo e ver minha trajetória profissional, além de conhecer minhas habilidades específicas.
         </Paragraph>
         

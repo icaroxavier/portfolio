@@ -12,8 +12,8 @@ const Base = (props) => {
 
   const downloadCurriculo = () => {
     const elemento = document.createElement('a')
-    elemento.href = '/curriculo-xalo-dev.pdf'
-    elemento.setAttribute('download', 'curriculo-xalo-dev.pdf')
+    elemento.href = '/cv-icaro-gabriel.pdf'
+    elemento.setAttribute('download', 'cv-icaro-gabriel.pdf')
     elemento.click()
   }
 
