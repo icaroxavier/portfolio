@@ -12,7 +12,8 @@ const Base = (props) => {
 
   const downloadCurriculo = () => {
     const elemento = document.createElement('a')
-    elemento.href = '/cv-icaro-gabriel.pdf'
+    //elemento.href = '/cv-icaro-gabriel.pdf'
+    elemento.href = 'https://docs.google.com/document/d/1a7oAxJpBjAHajNZwD27PHtzeS7SNrYMh3J8Lwxb1NC8/edit?usp=sharing'
     elemento.setAttribute('download', 'cv-icaro-gabriel.pdf')
     elemento.click()
   }
