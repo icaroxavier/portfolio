@@ -51,7 +51,7 @@ const Base = (props) => {
               }
             }}
           >
-            Meu CV
+            Meu Currículo
           </motion.button>
           <motion.button
             onClick={() => router.push('/contact')}
