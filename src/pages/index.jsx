@@ -253,7 +253,9 @@ const Home = () => {
         </Heading>
         <Paragraph>
           Para mais informações sobre o meu trabalho como profissional da área, você pode {' '}
-          <a href='/cv-icaro-gabriel.pdf' download='cv-icaro-gabriel.pdf' target='_blank' rel="noreferrer">clicar aqui</a>{' '}
+          <a 
+            href='https://docs.google.com/document/d/1a7oAxJpBjAHajNZwD27PHtzeS7SNrYMh3J8Lwxb1NC8/edit?usp=sharing'
+            target='_blank' rel="noreferrer">clicar aqui</a>{' '}
            para visualizar meu currículo e ver minha trajetória profissional, além de conhecer minhas habilidades específicas.
         </Paragraph>
         
