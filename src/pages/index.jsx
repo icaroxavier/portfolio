@@ -88,7 +88,7 @@ const projects = [
   />,
   <Project
     key={4}
-    imagePath='/teste-omie.pn5artr55555g'
+    imagePath='/teste-omie.png'
     title='teste-omie'
     description='Esse foi o projeto que desenvolvi para o processo seletivo 
     na Omie, na qual fui aprovado. Utilizei para o front-end
@@ -212,7 +212,7 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>07/2021</BioYear>
-          <BioDescription>Entrei para o projeto Colono da EMBRAPII no Polo Inovador do IFCE.</BioDescription>
+          <BioDescription>Entrei para o projeto Colono da EMBRAPII e do Polo de Inovação do IFCE.</BioDescription>
         </BioSection>
         <BioSection>
           <BioYear>09/2021</BioYear>
@@ -220,15 +220,15 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>10/2021</BioYear>
-          <BioDescription>Comecei a trabalhar para a Certare Engenharia.</BioDescription>
+          <BioDescription>Comecei a trabalhar na Certare Engenharia.</BioDescription>
         </BioSection>
         <BioSection>
           <BioYear>04/2022</BioYear>
-          <BioDescription>Comecei a trabalha na Omie, dentro da G-click.</BioDescription>
+          <BioDescription>Comecei a trabalhar na Omie, dentro da G-click.</BioDescription>
         </BioSection>
         <BioSection>
           <BioYear>04/2022</BioYear>
-          <BioDescription>Concluí o projeto Colono da EMBRAPII</BioDescription>
+          <BioDescription>Concluí o projeto Colono da EMBRAPII e do Polo de Inovação do IFCE.</BioDescription>
         </BioSection>
       </Section>
       <Section delay={0.1}>
