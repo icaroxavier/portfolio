@@ -44,8 +44,10 @@ const projects = [
       key={0}
       imagePath='/better-date-functions.png'
       title='better-date-functions'
-      description="Minha primeira library em JavaScript para ajudar no desenvolvimento de sistemas que manipulam datas, tendo 
-      várias funções prontas para conseguir detalhes sobre os dias, meses e anos."
+      description="Minha primeira library em JavaScript para ajudar 
+      no desenvolvimento de sistemas que manipulam datas, tendo 
+      várias funções prontas para conseguir detalhes sobre os dias, 
+      meses e anos."
       link='https://github.com/XaloDev/better-date-functions'
       padding='79%'
   />,
@@ -53,9 +55,12 @@ const projects = [
       key={1}
       imagePath='/reminder.jpg'
       title='reminder-task-manager'
-      description="Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio,
-        se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também,
-        foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo."
+      description="Meu primeiro projeto em React, que foi o desafio 
+      que recebi para conseguir o meu estágio,
+        se trata de um Kanban-like com drag'n'drop sincrozido com o 
+        firebase e com autenticação também,
+        foi bem desafiador, mas me provou que com bastante pesquisa 
+        conseguimos tudo."
       link='https://github.com/XaloDev/reminder-task-manager'
       padding='100%'
   />,
@@ -63,8 +68,10 @@ const projects = [
       key={2}
       imagePath='/morango.png'
       title='moRANGO'
-      description="Esse projeto se trata de um aplicativo em Flutter, que tem a finalidade de procurar receitas com todos
-      os ingrediente que você já possui em casa ou pretende comprar. Fiz o mesmo com meus colegas da faculdade em um projeto
+      description="Esse projeto se trata de um aplicativo em Flutter, 
+      que tem a finalidade de procurar receitas com todos
+      os ingrediente que você já possui em casa ou pretende comprar. 
+      Fiz o mesmo com meus colegas da faculdade em um projeto
       da cadeira de Programação orientada a objetos."
       link='https://github.com/XaloDev/moRANGO'
       padding='178%'
@@ -73,16 +80,28 @@ const projects = [
       key={3}
       imagePath='/workshop-springboot2-jpa.png'
       title='workshop-springboot2-jpa'
-      description="Esse projeto se trata de um CRUD feito com o Spring Boot baseado no sistema de um supermercado online, com
+      description="Esse projeto se trata de um CRUD feito com o Spring Boot 
+      baseado no sistema de um supermercado online, com
       a finalidade de firmar ainda mais minhas habilidades em Java e Spring."
       link='https://github.com/XaloDev/workshop-springboot2-jpa'
       padding='71%'
   />,
   <Project
-      key={4}
+    key={4}
+    imagePath='/teste-omie.pn5artr55555g'
+    title='teste-omie'
+    description='Esse foi o projeto que desenvolvi para o processo seletivo 
+    na Omie, na qual fui aprovado. Utilizei para o front-end
+    o framework Angular e desenvolvi um back-end com o Spring Boot (JAVA).'
+    link='https://github.com/XaloDev/teste-omie'
+    padding='35%'  
+  />,
+  <Project
+      key={5}
       imagePath='/portfolio.png'
       title='Portfólio online'
-      description="O projeto do website que você está acessando agora, desenvolvido inteiramente por mim em Next.js, com Firebase."
+      description="O projeto do website que você está acessando agora, 
+      desenvolvido inteiramente por mim em Next.js, com Firebase."
       link='https://github.com/XaloDev/portfolio'
       padding='115%'
   />
@@ -189,11 +208,11 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>02/2021</BioYear>
-          <BioDescription>Comecei meu primeiro estágio na RAV Tecnologia.</BioDescription>
+          <BioDescription>Comecei estágio na RAV Tecnologia.</BioDescription>
         </BioSection>
         <BioSection>
           <BioYear>07/2021</BioYear>
-          <BioDescription>Entrei para um projeto da EMBRAPII no Polo Inovador do IFCE.</BioDescription>
+          <BioDescription>Entrei para o projeto Colono da EMBRAPII no Polo Inovador do IFCE.</BioDescription>
         </BioSection>
         <BioSection>
           <BioYear>09/2021</BioYear>
@@ -201,7 +220,15 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>10/2021</BioYear>
-          <BioDescription>Comecei a trabalhar para a Inventhus(Certare).</BioDescription>
+          <BioDescription>Comecei a trabalhar para a Certare Engenharia.</BioDescription>
+        </BioSection>
+        <BioSection>
+          <BioYear>04/2022</BioYear>
+          <BioDescription>Comecei a trabalha na Omie, dentro da G-click.</BioDescription>
+        </BioSection>
+        <BioSection>
+          <BioYear>04/2022</BioYear>
+          <BioDescription>Concluí o projeto Colono da EMBRAPII</BioDescription>
         </BioSection>
       </Section>
       <Section delay={0.1}>
