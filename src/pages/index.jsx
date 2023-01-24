@@ -247,29 +247,15 @@ const Home = () => {
         {renderSelectedProject()}
         <Selector/>
       </Section>
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Informações
-        </Heading>
-        <Paragraph>
-          Para mais informações sobre o meu trabalho como profissional da área, você pode {' '}
-          <a 
-            href='https://docs.google.com/document/d/1a7oAxJpBjAHajNZwD27PHtzeS7SNrYMh3J8Lwxb1NC8/edit?usp=sharing'
-            target='_blank' rel="noreferrer">clicar aqui</a>{' '}
-           para visualizar meu currículo e ver minha trajetória profissional, além de conhecer minhas habilidades específicas.
-        </Paragraph>
+      
         
-      </Section>
-      <Section delay={0.2}>
+      
+      <Section delay={0.2} >
         <Heading as="h3" variant="section-title">
           Contato
         </Heading>
-        <p style={{marginTop: '2vh'}}>
-          Você pode me contatar usando próprio website,{' '}
-          <Link href={'/contact'}><a>clicando aqui</a></Link>. Ou se prefir,
-          
-        </p>
-        <p style={{marginTop: '1vh'}}>
+        
+        <p style={{marginTop: '1vh'}} id="contatos">
           <u>E-mail:</u> xalodeveloper@gmail.com
         </p>
         <p style={{marginTop: '1vh'}}>

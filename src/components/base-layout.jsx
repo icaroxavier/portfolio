@@ -3,21 +3,10 @@ import Head from 'next/head'
 import { motion } from 'framer-motion'
 import { BaseLayoutContainer } from '../styles/containers/base-layout.style'
 import { useRouter } from 'next/router'
-import X from '../assets/x.svg'
 import Image from 'next/image'
-
 
 const Base = (props) => {
   const router = useRouter()
-
-  const downloadCurriculo = () => {
-    const elemento = document.createElement('a')
-    //elemento.href = '/cv-icaro-gabriel.pdf'
-    elemento.href = 'https://docs.google.com/document/d/1a7oAxJpBjAHajNZwD27PHtzeS7SNrYMh3J8Lwxb1NC8/edit?usp=sharing'
-    elemento.target = '_blank'
-    elemento.setAttribute('download', 'cv-icaro-gabriel.pdf')
-    elemento.click()
-  }
 
   return (
     <BaseLayoutContainer>
@@ -26,10 +15,9 @@ const Base = (props) => {
       </Head>
       <header>
         <motion.div
-          style={{ width: 'min-content' }}
+          style={{ width: 'fit-content' }}
           whileHover={{
             position: 'relative',
-
             zIndex: 1,
             scale: 1.1,
             transition: {
@@ -37,12 +25,13 @@ const Base = (props) => {
             }
           }}
         >
-          <X onClick={() => router.push('/')} />
+          <h1 onClick={() => router.push('/')}  className="titulo" style={{ height: '100%', fontSize: '40px', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>Xalo Dev</h1>
         </motion.div>
 
         <div className="botoes">
+        
           <motion.button
-            onClick={downloadCurriculo}
+           
             whileHover={{
               position: 'relative',
               zIndex: 1,
@@ -52,20 +41,7 @@ const Base = (props) => {
               }
             }}
           >
-            Meu Currículo
-          </motion.button>
-          <motion.button
-            onClick={() => router.push('/contact')}
-            whileHover={{
-              position: 'relative',
-              zIndex: 1,
-              scale: 1.1,
-              transition: {
-                duration: 0.2
-              }
-            }}
-          >
-            Entre em contato
+            <a href='#contatos'>Entre em contato</a>
           </motion.button>
         </div>
       </header>
@@ -87,7 +63,7 @@ const Base = (props) => {
             }}
           >
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
-              <Image layout='fill' src='/linkedin.png' alt='linkedin logo'></Image>
+              <Image layout='fill' src='/linkedin.png' alt='linkedin logo' priority></Image>
             </div>
           </motion.a>
           <motion.a  
@@ -105,7 +81,7 @@ const Base = (props) => {
             }}
           >
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
-                <Image layout='fill' src='/github.png' alt='github logo'></Image>
+                <Image layout='fill' src='/github.png' alt='github logo' priority></Image>
             </div>
           </motion.a>
           <motion.a  
@@ -123,11 +99,11 @@ const Base = (props) => {
             }}
           >
             <div style={{width: '3vh', height: '3vh', position: 'relative'}}>
-              <Image layout='fill' src='/whatsapp.png' alt='whatsapp logo'></Image>
+              <Image layout='fill' src='/whatsapp.png' alt='whatsapp logo' priority></Image>
             </div>
           </motion.a>
         </div>
-        <span>© 2021 Xalo Dev. Todos os direitos reservados.</span>
+        <span>© {new Date().getFullYear} Xalo Dev. Todos os direitos reservados.</span>
       </footer>
     </BaseLayoutContainer>
   )

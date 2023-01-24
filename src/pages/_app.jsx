@@ -8,8 +8,6 @@ import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import GlobalStyle from '../styles/global.style'
 import theme from '../styles/theme'
 
-import '../firebase/config'
-
 const options = {
  
   position: positions.TOP_CENTER,

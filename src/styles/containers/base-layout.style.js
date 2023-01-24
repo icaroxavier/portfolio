@@ -56,11 +56,11 @@ export const BaseLayoutContainer = styled.div`
       grid-template-columns: 3fr 3fr;
     }
     @media (max-width: 700px) {
-      grid-template-columns: 1fr 4fr;
+      grid-template-columns: 4fr 3fr;
     }
 
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
     box-shadow: 0px 0px 7px black;
     z-index: 2;
 
