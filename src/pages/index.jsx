@@ -189,13 +189,11 @@ const Home = () => {
               src="/me.jpg"
               alt="Profile image"
             />
-              Xalo Dev, ou se preferir, Ícaro, sou um estudante de
-              Engenharia de Computação que acabou descobrindo a paixão pela programação
-              em sua primeira cadeira da faculdade, desde então, venho me aprimorando
-              nessa atividade que costumeiramente chamo de Arte. Fevereiro de 2021, tive minha
-              primeira oportunidade de trabalhar para uma empresa, desde então nunca
-              mais parei, sempre trabalhando e cada vez mais me conectando, me apaixonando 
-              e me aprimorando no meio.
+              Xalo Dev, ou se preferir, Ícaro, sou um Desenvolvedor de Software {'(Freela nas horas vagas)'}, 
+              apaixonado por tecnologia e pelo que eu faço. 
+              Fevereiro de 2021, tive minha
+              primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, 
+              sempre trabalhando, estudando e me aprimorando na Área.
             </Paragraph>
             
           </div>
@@ -232,12 +230,13 @@ const Home = () => {
         </BioSection>
         <BioSection>
           <BioYear>04/2022</BioYear>
-          <BioDescription>Comecei a trabalhar na Omie, dentro da G-click.</BioDescription>
+          <BioDescription>Concluí o projeto Colono da EMBRAPII e do Polo de Inovação do IFCE.</BioDescription>
         </BioSection>
         <BioSection>
           <BioYear>04/2022</BioYear>
-          <BioDescription>Concluí o projeto Colono da EMBRAPII e do Polo de Inovação do IFCE.</BioDescription>
+          <BioDescription>Comecei a trabalhar na Omie, dentro da G-click.</BioDescription>
         </BioSection>
+        
       </Section>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
