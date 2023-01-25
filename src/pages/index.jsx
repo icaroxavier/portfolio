@@ -41,7 +41,15 @@ const itemP = {
 
 const projects = [
   <Project
-      key={0}
+    key={0}
+    imagePath='/madeireira-geovane.png'
+    title='madeireira-geovane'
+    description="Uma landing page para a geração de leads desenvolvida inteiramente por mim em um Job como Freelancer."
+    link='https://github.com/XaloDev/madeireira-geovane'
+    padding='51%'
+  />,
+  <Project
+      key={1}
       imagePath='/better-date-functions.png'
       title='better-date-functions'
       description="Minha primeira library em JavaScript para ajudar 
@@ -52,7 +60,7 @@ const projects = [
       padding='79%'
   />,
   <Project
-      key={1}
+      key={2}
       imagePath='/reminder.jpg'
       title='reminder-task-manager'
       description="Meu primeiro projeto em React, que foi o desafio 
@@ -65,7 +73,7 @@ const projects = [
       padding='100%'
   />,
   <Project
-      key={2}
+      key={3}
       imagePath='/morango.png'
       title='moRANGO'
       description="Esse projeto se trata de um aplicativo em Flutter, 
@@ -77,7 +85,7 @@ const projects = [
       padding='178%'
   />,
   <Project
-      key={3}
+      key={4}
       imagePath='/workshop-springboot2-jpa.png'
       title='workshop-springboot2-jpa'
       description="Esse projeto se trata de um CRUD feito com o Spring Boot 
@@ -87,7 +95,7 @@ const projects = [
       padding='71%'
   />,
   <Project
-    key={4}
+    key={5}
     imagePath='/teste-omie.png'
     title='teste-omie'
     description='Esse foi o projeto que desenvolvi para o processo seletivo 
@@ -97,7 +105,7 @@ const projects = [
     padding='35%'  
   />,
   <Project
-      key={5}
+      key={6}
       imagePath='/portfolio.png'
       title='Portfólio online'
       description="O projeto do website que você está acessando agora, 
