@@ -103,7 +103,7 @@ const Base = (props) => {
             </div>
           </motion.a>
         </div>
-        <span>© {new Date().getFullYear} Xalo Dev. Todos os direitos reservados.</span>
+        <span>© {new Date().getFullYear()} Xalo Dev. Todos os direitos reservados.</span>
       </footer>
     </BaseLayoutContainer>
   )
