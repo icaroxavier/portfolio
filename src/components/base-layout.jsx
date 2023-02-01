@@ -51,7 +51,7 @@ const Base = (props) => {
           <motion.a 
             className='divImage' 
             rel='noreferrer' 
-            href='https://www.linkedin.com/in/%C3%ADcaro-gabriel-67148b1ba/' 
+            href='https://www.linkedin.com/in/icaroxavier/' 
             target="_blank"
             whileHover={{
               position: 'relative',

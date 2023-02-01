@@ -274,7 +274,7 @@ const Home = () => {
         </p>
         <p style={{marginTop: '1vh'}}>
           <a
-            href={'https://www.linkedin.com/in/%C3%ADcaro-gabriel-67148b1ba/'}
+            href={'https://www.linkedin.com/in/icaroxavier/'}
             target='_blank'
             rel="noreferrer"
           >
