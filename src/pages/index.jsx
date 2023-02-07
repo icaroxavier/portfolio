@@ -189,7 +189,7 @@ const Home = () => {
               src="/me.jpg"
               alt="Profile image"
             />
-              Xalo Dev, ou se preferir, Ícaro, sou um Desenvolvedor de Software {'(Freela nas horas vagas)'}, 
+              Xalo Dev, ou se preferir, Ícaro, sou um Desenvolvedor de Software Front-end, 
               apaixonado por tecnologia e pelo que eu faço. 
               Fevereiro de 2021, tive minha
               primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, 
