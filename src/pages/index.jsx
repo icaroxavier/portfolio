@@ -163,7 +163,7 @@ const Home = () => {
           variants={container}
         >
           <motion.h1 variants={itemH1}>Xalo Dev</motion.h1>
-          <motion.p variants={itemP}>Full-Stack Web Develeper.</motion.p>
+          <motion.p variants={itemP}>Front-End Develeper.</motion.p>
         </motion.div>
         <LazyVoxelDog/>
 
