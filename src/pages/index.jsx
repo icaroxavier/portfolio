@@ -236,7 +236,14 @@ const Home = () => {
           <BioYear>04/2022</BioYear>
           <BioDescription>Comecei a trabalhar na Omie, dentro da G-click.</BioDescription>
         </BioSection>
-        
+        <BioSection>
+          <BioYear>03/2023</BioYear>
+          <BioDescription>Finalizei minha colaboração na Omie para aceitar outra oportunidade.</BioDescription>
+        </BioSection>
+        <BioSection>
+          <BioYear>03/2023</BioYear>
+          <BioDescription>Comecei a trabalhar na Soluevo, empresa de consultoria, atuando na NowCM.</BioDescription>
+        </BioSection>
       </Section>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
