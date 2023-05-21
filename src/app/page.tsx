@@ -4,7 +4,13 @@ import Link from "next/link";
 import { GithubLogo, LinkedinLogo, WhatsappLogo, ArrowLeft, ArrowRight } from "phosphor-react";
 import { useState } from "react";
 
-const projects = [
+interface Project {
+  name: string
+  description: string
+  imagePath: string
+}
+
+const projects: Project[] = [
   {
     name: 'madeireira-geovane',
     description: 'Uma landing page para a geração de leads desenvolvida inteiramente por mim em um Job como Freelancer.',
@@ -19,6 +25,21 @@ const projects = [
     name: 'reminder-task-manager',
     description: "Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio, se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também, foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo.",
     imagePath: '/reminder.jpg',
+  },
+  {
+    name: 'moRANGO',
+    description: 'Esse projeto se trata de um aplicativo em Flutter, que tem a finalidade de procurar receitas com todos os ingrediente que você já possui em casa ou pretende comprar. Fiz o mesmo com meus colegas da faculdade em um projeto da cadeira de Programação orientada a objetos.',
+    imagePath: '/morango.png',
+  },
+  {
+    name: 'teste-omie',
+    description: 'Esse foi o projeto que desenvolvi para o processo seletivo na Omie, na qual fui aprovado. Utilizei para o front-end o framework Angular e desenvolvi um back-end com o Spring Boot (JAVA).',
+    imagePath: '/teste-omie.png',
+  },
+  {
+    name: 'portfolio',
+    description: 'Esse é o meu portfólio, desenvolvido com Next.js e TailwindCSS, com o objetivo de mostrar um pouco do meu trabalho e das minhas habilidades.',
+    imagePath: '/portfolio.png',
   }
 
 ]
