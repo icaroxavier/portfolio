@@ -80,7 +80,7 @@ export default function Home() {
               para uma empresa no ramo, desde então nunca parei, sempre trabalhando,
               estudando e me aprimorando na Área.
             </p>
-            <Image src="https://github.com/icaroxavier.png" alt="Ícaro Xavier" width={110} height={110} className="rounded-full"/>
+            <Image src="https://github.com/icaroxavier.png" alt="Ícaro Xavier" width={110} height={110} className="rounded-full" priority/>
           </div>
         </section>
         <section>
