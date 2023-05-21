@@ -1,17 +1,58 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { GithubLogo, LinkedinLogo, WhatsappLogo } from "phosphor-react";
+import { GithubLogo, LinkedinLogo, WhatsappLogo, ArrowLeft, ArrowRight } from "phosphor-react";
+import { useState } from "react";
+
+const projects = [
+  {
+    name: 'madeireira-geovane',
+    description: 'Uma landing page para a geração de leads desenvolvida inteiramente por mim em um Job como Freelancer.',
+    imagePath: '/madeireira-geovane.png',
+  },
+  {
+    name: 'better-date-functions',
+    description: 'Minha primeira library em JavaScript para ajudar no desenvolvimento de sistemas que manipulam datas, tendo várias funções prontas para conseguir detalhes sobre os dias, meses e anos.',
+    imagePath: '/better-date-functions.png',
+  },
+  {
+    name: 'reminder-task-manager',
+    description: "Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio, se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também, foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo.",
+    imagePath: '/reminder.jpg',
+  }
+
+]
 
 export default function Home() {
+
+  const [activeProject, setActiveProject] = useState<number>(0)
+
+  const handleClickNextProject = () => {
+    setActiveProject(state => {
+      if (state + 1 === projects.length) {
+        return 0
+      }
+      return state + 1
+    })
+  }
+
+  const handleClickPreviousProject = () => {
+    setActiveProject(state => {
+      if (state - 1 === -1) {
+        return projects.length - 1
+      }
+      return state - 1
+    })
+  }
+
   return (
     <div className="h-screen flex flex-col">
       <div className="overflow-y-auto">
       <main className="flex-1 flex flex-col w-full max-w-2xl mx-auto p-3 gap-3 overflow-y-auto">
         <section>
-          <h2 className="text-2xl underline font-medium">Sobre</h2>
-          <div className="flex gap-2">
-            <p className="text-justify flex items-center font-medium text-zinc-400">
+          <h2 className="text-2xl font-medium">Sobre</h2>
+          <div className="flex gap-2 w-full">
+            <p className="text-justify flex items-center flex-1 font-medium text-zinc-400">
               Olá, eu sou o Ícaro, um Engenheiro de Software Front-end,
               apaixonado por tecnologia e pelo que eu faço.
               Fevereiro de 2021, tive minha primeira oportunidade de trabalhar
@@ -22,7 +63,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <h2 className="text-2xl underline font-medium">Bio</h2>
+          <h2 className="text-2xl font-medium">Bio</h2>
           <div className="flex flex-col gap-2">
             <p className="flex gap-2 border-b-zinc-200 border-b mt-2">
               <span className="text-zinc-300 font-bold">06/2001</span>
@@ -63,7 +104,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <h2 className="text-2xl underline font-medium mb-1">Hobbies</h2>
+          <h2 className="text-2xl font-medium mb-1">Hobbies</h2>
           <p className="text-justify flex items-center font-medium text-zinc-400">
             No meu tempo livre, provavelmente me encontrará jogando algum jogo,
             passeando com meu cachorro, estudando novidades da área,
@@ -73,26 +114,41 @@ export default function Home() {
             porque eu só paro quando devorar tudo.
           </p>
         </section>
-        <section className="flex flex-col">
-          <h2 className="text-2xl underline font-medium mb-1">Projetos Pessoais</h2>
-          <div>
-
+        <section className="flex flex-col gap-2">
+          <h2 className="text-2xl font-medium">Projetos Pessoais</h2>
+          <div className="flex flex-col gap-2 w-full mb-2">
+            <h3 className="text-lg text-zinc-300">- {projects[activeProject].name}</h3>
+            <div className="relative h-96 w-full bg-zinc-800 rounded-lg">
+              <Image src={projects[activeProject].imagePath} alt="" fill className="object-contain"/>
+            </div>
+            <p className="text-zinc-400 text-justify">{projects[activeProject].description}</p>
+          </div>
+          <div className="flex gap-2 mx-auto mb-2">
+            <ArrowLeft size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickPreviousProject}/>
+            {projects.map((project, index) => {
+              return <div
+                onClick={() => setActiveProject(index)}
+                key={`ball-${project.name}`}
+                className={`h-5 w-5 rounded-full cursor-pointer hover:scale-110 transition-all ${activeProject === index ? 'bg-zinc-50' : 'bg-zinc-700'}`}
+              />
+            })}
+            <ArrowRight size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickNextProject}/>
           </div>
         </section>
         <section className="mb-4">
-          <h2 className="text-2xl underline font-medium mb-1">Contatos</h2>
+          <h2 className="text-2xl font-medium mb-1">Contatos</h2>
           <div className="flex flex-col gap-2">
             <p className="text-zinc-400">
-              <span className="text-zinc-300 font-bold underline">Email</span>
+              <span className="text-zinc-300 font-bold ">Email</span>
               : icarogabriel999@icloud.com</p>
             <p className="text-zinc-400">
-              <span className="text-zinc-300 font-bold underline">Telefone:</span>
+              <span className="text-zinc-300 font-bold ">Telefone:</span>
               : +55 {'(85)'} 99816-4001</p>
           </div>
         </section>
       </main>
       </div>
-      <footer className="h-20 pt-2 bg-zinc-800 flex flex-col items-center justify-between shadow-lg -top-2 shadow-zinc-50">
+      <footer className="h-20 pt-2 bg-zinc-800 flex flex-col items-center justify-between shadow-md -top-2 shadow-zinc-50">
         <div className="flex gap-3">
           <Link href='https://www.linkedin.com/in/icaroxavier/' target="_blank">
             <LinkedinLogo size={40} className="cursor-pointer hover:scale-110 transition-all"/>
