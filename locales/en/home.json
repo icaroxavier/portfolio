@@ -1,0 +1,50 @@
+{
+  "about": {
+    "title": "Abot",
+    "description": "Olá, eu sou o Ícaro, um Engenheiro de Software Front-end, apaixonado por tecnologia e pelo que eu faço. Fevereiro de 2021, tive minha primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, sempre trabalhando, estudando e me aprimorando na Área."
+  },
+  "bio": {
+    "title": "Bio",
+    "06/2001": "Nasci em Fortaleza - Ceará, Brasil.",
+    "02/2021": "Comecei o meu primeiro emprego na área como estagiário na RAV Tecnologia",
+    "07/2021": "Entrei para o projeto Colono da EMBRAPII e do Polo de Inovação do IFCE.",
+    "09/2021": "Concluí o estágio na RAV Tecnologia.",
+    "10/2021": "Comecei a trabalhar na Certare Engenharia & Consultoria.",
+    "04/2022-1": "Concluí o projeto Colono da EMBRAPII e do Polo de Inovação do IFCE.",
+    "04/2022-2": "Comecei a trabalhar na Omie, dentro da G-click.",
+    "03/2023-1": "Finalizei minha colaboração na Omie para aceitar outra oportunidade.",
+    "03/2023-2": "Comecei a trabalhar na Soluevo, empresa de consultoria, atuando na NowCM."
+  },
+  "hobbies": {
+    "title": "Hobbies",
+    "description": "No meu tempo livre, provavelmente me encontrará jogando algum jogo, passeando com meu cachorro, estudando novidades da área, passeando de carro rumo a algum lugar novo ou assistindo alguma uma série, louco pra descobrir o que acontece. Isso é, se eu não tiver descobrido algum assunto que me interesse recentemente, porque eu só paro quando devorar tudo."
+  },
+  "projects": {
+    "title": "My Projects",
+    "madeireira-geovane": {
+      "description": "Uma landing page para a geração de leads desenvolvida inteiramente por mim em um Job como Freelancer."
+    },
+    "better-date-functions": {
+      "description": "Minha primeira library em JavaScript para ajudar no desenvolvimento de sistemas que manipulam datas, tendo várias funções prontas para conseguir detalhes sobre os dias, meses e anos."
+    },
+    "reminder-task-manager": {
+      "description": "Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio, se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também, foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo."
+    },
+    "moRANGO": {
+      "description": "Esse projeto se trata de um aplicativo em Flutter, que tem a finalidade de procurar receitas com todos os ingrediente que você já possui em casa ou pretende comprar. Fiz o mesmo com meus colegas da faculdade em um projeto da cadeira de Programação orientada a objetos."
+    },
+    "teste-omie": {
+      "description": "Esse foi o projeto que desenvolvi para o processo seletivo na Omie, na qual fui aprovado. Utilizei para o front-end o framework Angular e desenvolvi um back-end com o Spring Boot (JAVA)."
+    },
+    "portfolio": {
+      "description": "Esse é o meu portfólio, desenvolvido com Next.js e TailwindCSS, com o objetivo de mostrar um pouco do meu trabalho e das minhas habilidades."
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "phone": "Phone"
+  },
+  "footer": {
+    "copyright": "Ícaro Xavier. Todos os direitos reservados."
+  }
+}
