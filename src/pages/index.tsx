@@ -58,7 +58,20 @@ export default function Home() {
   const [activeProject, setActiveProject] = useState<number>(0)
   const [isTranslateMenuOpen, setIsTranslateMenuOpen] = useState<boolean>(false)
   const { t, lang } = useTranslation('home')
-  const { name, imagePath, link } = projects[activeProject]
+  const { name, link } = projects[activeProject]
+
+  const images = projects.map(project => {
+    return (
+      <Image
+        key={project.name}
+        src={project.imagePath}
+        className="object-contain"
+        sizes="100%"
+        alt=""
+        fill
+      />
+    )
+  })
 
   const handleClickNextProject = () => {
     setActiveProject(state => {
@@ -85,20 +98,6 @@ export default function Home() {
     setLanguage(langParam)
     localStorage.setItem('@icaroxavier/portfolio:lang', langParam)
     handleCloseTranslateMenu()
-  }
-
-  function getProjectImage(path: string) {
-    return (
-      <Image
-        src={path}
-        alt=""
-        fill
-        className="object-contain"
-        sizes="100%"
-        placeholder="blur"
-        blurDataURL="/blur.png"
-      />
-    )
   }
 
   useEffect(() => {
@@ -211,7 +210,7 @@ export default function Home() {
                   {name}
                 </Link>
                 <div className="relative h-96 w-full bg-zinc-950 rounded-lg">
-                  {getProjectImage(imagePath)}
+                  {images[activeProject]}
                   <div className="flex gap-2 mx-auto absolute bottom-1 left-1/2 -translate-x-1/2 bg-zinc-800 rounded-md p-1">
                     <ArrowLeft size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickPreviousProject}/>
                     {projects.map((project, index) => {
