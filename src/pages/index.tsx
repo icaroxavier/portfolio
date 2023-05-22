@@ -201,15 +201,15 @@ export default function Home() {
                 >
                   {name}
                 </Link>
-                <div className="relative h-96 w-full bg-zinc-800 rounded-lg">
+                <div className="relative h-96 w-full bg-zinc-950 rounded-lg">
                   {getProjectImage(imagePath)}
-                  <div className="flex gap-2 mx-auto absolute bottom-1 left-1/2 -translate-x-1/2 bg-zinc-950 rounded-md p-1">
+                  <div className="flex gap-2 mx-auto absolute bottom-1 left-1/2 -translate-x-1/2 bg-zinc-800 rounded-md p-1">
                     <ArrowLeft size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickPreviousProject}/>
                     {projects.map((project, index) => {
                       return <div
                         onClick={() => setActiveProject(index)}
                         key={`ball-${project.name}`}
-                        className={`h-5 w-5 rounded-full cursor-pointer hover:scale-110 transition-all ${activeProject === index ? 'bg-zinc-50' : 'bg-zinc-700'}`}
+                        className={`h-5 w-5 rounded-full cursor-pointer hover:scale-110 transition-all ${activeProject === index ? 'bg-zinc-50' : 'bg-zinc-600'}`}
                       />
                     })}
                     <ArrowRight size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickNextProject}/>
