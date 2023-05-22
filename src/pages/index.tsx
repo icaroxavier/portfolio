@@ -79,6 +79,20 @@ export default function Home() {
     localStorage.setItem('@icaroxavier/portfolio:lang', langParam)
   }
 
+  function getProjectImage(path: string) {
+    return (
+      <Image
+        src={path}
+        alt=""
+        fill
+        className="object-contain"
+        sizes="100%"
+        placeholder="blur"
+        blurDataURL="/blur.png"
+      />
+    )
+  }
+
   useEffect(() => {
     const localStorageLang = localStorage.getItem('@icaroxavier/portfolio:lang')
     if (localStorageLang === 'en') {
@@ -188,21 +202,22 @@ export default function Home() {
                   {name}
                 </Link>
                 <div className="relative h-96 w-full bg-zinc-800 rounded-lg">
-                  <Image src={imagePath} alt="" fill className="object-contain" sizes="100%"/>
+                  {getProjectImage(imagePath)}
+                  <div className="flex gap-2 mx-auto absolute bottom-1 left-1/2 -translate-x-1/2 bg-zinc-950 rounded-md p-1">
+                    <ArrowLeft size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickPreviousProject}/>
+                    {projects.map((project, index) => {
+                      return <div
+                        onClick={() => setActiveProject(index)}
+                        key={`ball-${project.name}`}
+                        className={`h-5 w-5 rounded-full cursor-pointer hover:scale-110 transition-all ${activeProject === index ? 'bg-zinc-50' : 'bg-zinc-700'}`}
+                      />
+                    })}
+                    <ArrowRight size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickNextProject}/>
+                  </div>
                 </div>
                 <p className="text-zinc-400 text-justify h-full" style={{minHeight: '6rem'}}>{t(`projects.${name}.description`)}</p>
               </div>
-              <div className="flex gap-2 mx-auto ">
-                <ArrowLeft size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickPreviousProject}/>
-                {projects.map((project, index) => {
-                  return <div
-                    onClick={() => setActiveProject(index)}
-                    key={`ball-${project.name}`}
-                    className={`h-5 w-5 rounded-full cursor-pointer hover:scale-110 transition-all ${activeProject === index ? 'bg-zinc-50' : 'bg-zinc-700'}`}
-                  />
-                })}
-                <ArrowRight size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickNextProject}/>
-              </div>
+
             </section>
             <section className="mb-4">
               <h2 className="text-2xl font-medium mb-1">{t('contacts.title')}</h2>
