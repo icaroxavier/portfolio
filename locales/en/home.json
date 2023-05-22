@@ -1,43 +1,43 @@
 {
   "about": {
-    "title": "Abot",
-    "description": "Olá, eu sou o Ícaro, um Engenheiro de Software Front-end, apaixonado por tecnologia e pelo que eu faço. Fevereiro de 2021, tive minha primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, sempre trabalhando, estudando e me aprimorando na Área."
+    "title": "About",
+    "description": "Hello, I'm Ícaro, a Front-end Software Engineer, passionate about technology and what I do. In February 2021, I had my first opportunity to work for a company in the field, and since then I haven't stopped, always working, studying, and improving in the area."
   },
   "bio": {
     "title": "Bio",
-    "06/2001": "Nasci em Fortaleza - Ceará, Brasil.",
-    "02/2021": "Comecei o meu primeiro emprego na área como estagiário na RAV Tecnologia",
-    "07/2021": "Entrei para o projeto Colono da EMBRAPII e do Polo de Inovação do IFCE.",
-    "09/2021": "Concluí o estágio na RAV Tecnologia.",
-    "10/2021": "Comecei a trabalhar na Certare Engenharia & Consultoria.",
-    "04/2022-1": "Concluí o projeto Colono da EMBRAPII e do Polo de Inovação do IFCE.",
-    "04/2022-2": "Comecei a trabalhar na Omie, dentro da G-click.",
-    "03/2023-1": "Finalizei minha colaboração na Omie para aceitar outra oportunidade.",
-    "03/2023-2": "Comecei a trabalhar na Soluevo, empresa de consultoria, atuando na NowCM."
+    "06/2001": "I was born in Fortaleza - Ceará, Brazil.",
+    "02/2021": "Started my first job in the field as an intern at RAV Tecnologia",
+    "07/2021": "Joined the Colono project of EMBRAPII and Polo de Inovação do IFCE.",
+    "09/2021": "Completed the internship at RAV Tecnologia.",
+    "10/2021": "Started working at Certare Engenharia & Consultoria.",
+    "04/2022-1": "Completed the Colono project of EMBRAPII and Polo de Inovação do IFCE.",
+    "04/2022-2": "Started working at Omie, within G-click.",
+    "03/2023-1": "Finished my collaboration at Omie to accept another opportunity.",
+    "03/2023-2": "Started working at Soluevo, a consulting company, working in NowCM."
   },
   "hobbies": {
     "title": "Hobbies",
-    "description": "No meu tempo livre, provavelmente me encontrará jogando algum jogo, passeando com meu cachorro, estudando novidades da área, passeando de carro rumo a algum lugar novo ou assistindo alguma uma série, louco pra descobrir o que acontece. Isso é, se eu não tiver descobrido algum assunto que me interesse recentemente, porque eu só paro quando devorar tudo."
+    "description": "In my free time, you'll probably find me playing a game, taking a walk with my dog, studying the latest trends in the field, going for a drive to a new place, or watching a series, eager to find out what happens. That is if I haven't recently discovered a topic that interests me, because I only stop when I've devoured everything."
   },
   "projects": {
-    "title": "My Projects",
+    "title": "Personal Projects",
     "madeireira-geovane": {
-      "description": "Uma landing page para a geração de leads desenvolvida inteiramente por mim em um Job como Freelancer."
+      "description": "A lead generation landing page developed entirely by me as a Freelancer job."
     },
     "better-date-functions": {
-      "description": "Minha primeira library em JavaScript para ajudar no desenvolvimento de sistemas que manipulam datas, tendo várias funções prontas para conseguir detalhes sobre os dias, meses e anos."
+      "description": "My first JavaScript library to assist in the development of systems that manipulate dates, providing various ready-made functions to obtain details about days, months, and years."
     },
     "reminder-task-manager": {
-      "description": "Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio, se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também, foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo."
+      "description": "My first React project, which was the challenge I received to secure my internship. It's a Kanban-like application with synchronized drag and drop using Firebase and authentication as well. It was quite challenging, but it proved to me that with enough research, we can achieve anything."
     },
     "moRANGO": {
-      "description": "Esse projeto se trata de um aplicativo em Flutter, que tem a finalidade de procurar receitas com todos os ingrediente que você já possui em casa ou pretende comprar. Fiz o mesmo com meus colegas da faculdade em um projeto da cadeira de Programação orientada a objetos."
+      "description": "This project is a Flutter application that aims to search for recipes using ingredients that you already have at home or plan to buy. I developed it with my college colleagues as part of an Object-Oriented Programming course project."
     },
     "teste-omie": {
-      "description": "Esse foi o projeto que desenvolvi para o processo seletivo na Omie, na qual fui aprovado. Utilizei para o front-end o framework Angular e desenvolvi um back-end com o Spring Boot (JAVA)."
+      "description": "This was the project I developed for the Omie selection process, in which I was approved. I used the Angular framework for the front-end and developed a back-end with Spring Boot (JAVA)."
     },
     "portfolio": {
-      "description": "Esse é o meu portfólio, desenvolvido com Next.js e TailwindCSS, com o objetivo de mostrar um pouco do meu trabalho e das minhas habilidades."
+      "description": "This is my portfolio, developed with Next.js and TailwindCSS, with the aim of showcasing some of my work and skills."
     }
   },
   "contacts": {
@@ -45,6 +45,6 @@
     "phone": "Phone"
   },
   "footer": {
-    "copyright": "Ícaro Xavier. Todos os direitos reservados."
+    "copyright": "Ícaro Xavier. All rights reserved."
   }
 }
