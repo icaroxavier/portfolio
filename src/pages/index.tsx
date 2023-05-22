@@ -78,14 +78,14 @@ export default function Home() {
           <section>
             <h2 className="text-2xl font-medium">Sobre</h2>
             <div className="flex gap-2 w-full">
-              <p className="text-justify flex items-center flex-1 font-medium text-zinc-400">
+              <p className="block font-medium text-zinc-400">
+                <Image src="https://github.com/icaroxavier.png" alt="Ícaro Xavier" width={120} height={120} className="rounded-full float-right m-1" priority />
                 Olá, eu sou o Ícaro, um Engenheiro de Software Front-end,
                 apaixonado por tecnologia e pelo que eu faço.
                 Fevereiro de 2021, tive minha primeira oportunidade de trabalhar
                 para uma empresa no ramo, desde então nunca parei, sempre trabalhando,
                 estudando e me aprimorando na Área.
               </p>
-              <Image src="https://github.com/icaroxavier.png" alt="Ícaro Xavier" width={110} height={110} className="rounded-full aspect-square float-right object-contain" priority/>
             </div>
           </section>
           <section>
@@ -143,11 +143,11 @@ export default function Home() {
           <section className="flex flex-col gap-2">
             <h2 className="text-2xl font-medium">Projetos Pessoais</h2>
             <div className="flex flex-col gap-2 w-full mb-2">
-              <h3 className="text-lg text-zinc-300">- {projects[activeProject].name}</h3>
+              <h3 className="text-lg text-zinc-300 mx-auto font-bold">{projects[activeProject].name}</h3>
               <div className="relative h-96 w-full bg-zinc-800 rounded-lg">
                 <Image src={projects[activeProject].imagePath} alt="" fill className="object-contain"/>
               </div>
-              <p className="text-zinc-400 text-justify">{projects[activeProject].description}</p>
+              <p className="text-zinc-400 text-justify h-24">{projects[activeProject].description}</p>
             </div>
             <div className="flex gap-2 mx-auto mb-2">
               <ArrowLeft size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickPreviousProject}/>
