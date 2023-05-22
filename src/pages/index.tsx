@@ -238,7 +238,7 @@ export default function Home() {
               </div>
 
             </section>
-            <section className="mb-24">
+            <section className="mb-4">
               <h2 className="text-2xl font-medium mb-1">{t('contacts.title')}</h2>
               <div className="flex flex-col gap-2">
                 <p className="text-zinc-400">
@@ -269,6 +269,8 @@ export default function Home() {
           </div>
           <div className="text-zinc-400 text-sm">© {new Date().getFullYear()} {t('footer.copyright')}</div>
         </footer>
+        <footer className="w-full h-36 bg-transparent -z-10"/>
+
       </div>
     </>
 
