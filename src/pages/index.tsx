@@ -6,6 +6,13 @@ import { GithubLogo, LinkedinLogo, WhatsappLogo, ArrowLeft, ArrowRight, Translat
 import { useCallback, useEffect, useState } from "react";
 import useTranslation from 'next-translate/useTranslation'
 import setLanguage from 'next-translate/setLanguage'
+import dynamic from "next/dynamic";
+import VoxelDogLoader from '@portfolio/components/voxel-dog-loader'
+
+const LazyVoxelDog = dynamic(() => import('@portfolio/components/voxel-dog'), {
+  ssr: false,
+  loading: () => <VoxelDogLoader />
+})
 
 interface Project {
   name: string
@@ -113,10 +120,10 @@ export default function Home() {
         <Translate
           size={48}
           onClick={toggleTranslateMenu}
-          className="fixed z-20 right-2 md:right-8 top-2 md:top-4 bg-blue-700 p-2 rounded-full cursor-pointer hover:scale-110 transition-all"
+          className="fixed z-30 right-4 md:right-8 top-2 md:top-4 bg-blue-700 p-2 rounded-full cursor-pointer hover:scale-110 transition-all"
         />
         <div
-          className={`fixed z-20 right-2 md:right-8 top-16 md:top-20 bg-zinc-800 ${isTranslateMenuOpen ? 'scale-100' : 'scale-0'} transition-all p-2 rounded-md flex flex-col gap-2`}
+          className={`fixed z-30 right-4 md:right-8 top-16 md:top-20 bg-zinc-800 ${isTranslateMenuOpen ? 'scale-100' : 'scale-0'} transition-all p-2 rounded-md flex flex-col gap-2`}
         >
           <button
             onClick={() => lang !== 'en' && handleChangeLanguage('en')}
@@ -132,11 +139,12 @@ export default function Home() {
           </button>
         </div>
         {isTranslateMenuOpen && (
-          <div className="fixed z-10 h-screen w-screen" onClick={handleCloseTranslateMenu}/>
+          <div className="fixed z-20 h-screen w-screen" onClick={handleCloseTranslateMenu}/>
         )}
         <main className="overflow-y-auto">
-          <div className="flex-1 flex flex-col w-full max-w-2xl mx-auto p-3 gap-8 overflow-y-auto">
-            <section>
+          <div className="flex-1 flex flex-col w-full max-w-2xl mx-auto p-4 gap-8 overflow-y-auto relative">
+            <LazyVoxelDog />
+            <section className="z-10">
               <h2 className="text-2xl font-medium">{t('about.title')}</h2>
               <div className="flex gap-2 w-full">
                 <p className="block font-medium text-zinc-400">
