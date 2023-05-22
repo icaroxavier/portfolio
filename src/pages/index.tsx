@@ -69,6 +69,8 @@ export default function Home() {
         sizes="100%"
         alt=""
         fill
+        placeholder="blur"
+        blurDataURL={'/blur.png'}
       />
     )
   })
