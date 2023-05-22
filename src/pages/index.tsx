@@ -77,6 +77,7 @@ export default function Home() {
   const handleChangeLanguage = (langParam: string) => {
     setLanguage(langParam)
     localStorage.setItem('@icaroxavier/portfolio:lang', langParam)
+    handleCloseTranslateMenu()
   }
 
   function getProjectImage(path: string) {
