@@ -252,7 +252,7 @@ export default function Home() {
           </div>
         </main>
         <footer className="
-          w-full h-20 pt-2 bg-zinc-900 flex flex-col items-center justify-between
+          w-full h-16 pt-1 bg-zinc-900 flex flex-col items-center justify-between
           shadow-lg shadow-zinc-50
           fixed bottom-0 left-0 "
         >
