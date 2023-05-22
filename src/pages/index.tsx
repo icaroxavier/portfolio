@@ -9,6 +9,7 @@ interface Project {
   name: string
   description: string
   imagePath: string
+  link?: string
 }
 
 const projects: Project[] = [
@@ -21,26 +22,31 @@ const projects: Project[] = [
     name: 'better-date-functions',
     description: 'Minha primeira library em JavaScript para ajudar no desenvolvimento de sistemas que manipulam datas, tendo várias funções prontas para conseguir detalhes sobre os dias, meses e anos.',
     imagePath: '/better-date-functions.png',
+    link: 'https://github.com/icaroxavier/better-date-functions'
   },
   {
     name: 'reminder-task-manager',
     description: "Meu primeiro projeto em React, que foi o desafio que recebi para conseguir o meu estágio, se trata de um Kanban-like com drag'n'drop sincrozido com o firebase e com autenticação também, foi bem desafiador, mas me provou que com bastante pesquisa conseguimos tudo.",
     imagePath: '/reminder.jpg',
+    link: 'https://github.com/icaroxavier/reminder-task-manager'
   },
   {
     name: 'moRANGO',
     description: 'Esse projeto se trata de um aplicativo em Flutter, que tem a finalidade de procurar receitas com todos os ingrediente que você já possui em casa ou pretende comprar. Fiz o mesmo com meus colegas da faculdade em um projeto da cadeira de Programação orientada a objetos.',
     imagePath: '/morango.png',
+    link: 'https://github.com/icaroxavier/moRANGO'
   },
   {
     name: 'teste-omie',
     description: 'Esse foi o projeto que desenvolvi para o processo seletivo na Omie, na qual fui aprovado. Utilizei para o front-end o framework Angular e desenvolvi um back-end com o Spring Boot (JAVA).',
     imagePath: '/teste-omie.png',
+    link: 'https://github.com/icaroxavier/teste-omie'
   },
   {
     name: 'portfolio',
     description: 'Esse é o meu portfólio, desenvolvido com Next.js e TailwindCSS, com o objetivo de mostrar um pouco do meu trabalho e das minhas habilidades.',
     imagePath: '/portfolio.png',
+    link: 'https://github.com/icaroxavier/portfolio'
   }
 
 ]
@@ -48,6 +54,7 @@ const projects: Project[] = [
 export default function Home() {
 
   const [activeProject, setActiveProject] = useState<number>(0)
+  const { name, description, imagePath, link } = projects[activeProject]
 
   const handleClickNextProject = () => {
     setActiveProject(state => {
@@ -74,12 +81,12 @@ export default function Home() {
       </Head>
       <div className="h-screen flex flex-col">
         <div className="overflow-y-auto">
-        <main className="flex-1 flex flex-col w-full max-w-2xl mx-auto p-3 gap-3 overflow-y-auto">
+        <main className="flex-1 flex flex-col w-full max-w-2xl mx-auto p-3 gap-8 overflow-y-auto">
           <section>
             <h2 className="text-2xl font-medium">Sobre</h2>
             <div className="flex gap-2 w-full">
               <p className="block font-medium text-zinc-400">
-                <Image src="https://github.com/icaroxavier.png" alt="Ícaro Xavier" width={120} height={120} className="rounded-full float-right m-1" priority />
+                <Image src="https://github.com/icaroxavier.png" alt="Ícaro Xavier" width={105} height={105} className="rounded-full float-right m-1" priority />
                 Olá, eu sou o Ícaro, um Engenheiro de Software Front-end,
                 apaixonado por tecnologia e pelo que eu faço.
                 Fevereiro de 2021, tive minha primeira oportunidade de trabalhar
@@ -143,13 +150,19 @@ export default function Home() {
           <section className="flex flex-col gap-2">
             <h2 className="text-2xl font-medium">Projetos Pessoais</h2>
             <div className="flex flex-col gap-2 w-full mb-2">
-              <h3 className="text-lg text-zinc-300 mx-auto font-bold">{projects[activeProject].name}</h3>
+              <Link
+                className={`text-lg mx-auto font-bold ${link ? 'underline text-blue-600 hover:text-blue-800 visited:text-purple-600' : 'text-zinc-300'}`}
+                href={link || ''}
+                target={link ? '_blank' : '_self'}
+              >
+                {name}
+              </Link>
               <div className="relative h-96 w-full bg-zinc-800 rounded-lg">
-                <Image src={projects[activeProject].imagePath} alt="" fill className="object-contain"/>
+                <Image src={imagePath} alt="" fill className="object-contain"/>
               </div>
-              <p className="text-zinc-400 text-justify h-24">{projects[activeProject].description}</p>
+              <p className="text-zinc-400 text-justify h-full" style={{minHeight: '6rem'}}>{description}</p>
             </div>
-            <div className="flex gap-2 mx-auto mb-2">
+            <div className="flex gap-2 mx-auto ">
               <ArrowLeft size={20} className="cursor-pointer hover:scale-110 transition-all" onClick={handleClickPreviousProject}/>
               {projects.map((project, index) => {
                 return <div
