@@ -119,7 +119,7 @@ export default function Home() {
       </Head>
       <div className="h-screen flex flex-col">
         <Translate
-          size={48}
+          size={42}
           onClick={toggleTranslateMenu}
           className="fixed z-30 right-4 md:right-8 top-2 md:top-4 bg-blue-700 p-2 rounded-full cursor-pointer hover:scale-110 transition-all"
         />
@@ -238,7 +238,7 @@ export default function Home() {
               </div>
 
             </section>
-            <section className="mb-4">
+            <section className="mb-24">
               <h2 className="text-2xl font-medium mb-1">{t('contacts.title')}</h2>
               <div className="flex flex-col gap-2">
                 <p className="text-zinc-400">
@@ -251,7 +251,11 @@ export default function Home() {
             </section>
           </div>
         </main>
-        <footer className="h-20 pt-2 bg-zinc-800 flex flex-col items-center justify-between shadow-md -top-2 shadow-zinc-50">
+        <footer className="
+          w-full h-20 pt-2 bg-zinc-900 flex flex-col items-center justify-between
+          shadow-lg shadow-zinc-50
+          fixed bottom-0 left-0 "
+        >
           <div className="flex gap-3">
             <Link href='https://www.linkedin.com/in/icaroxavier/' target="_blank">
               <LinkedinLogo size={40} className="cursor-pointer hover:scale-110 transition-all"/>
