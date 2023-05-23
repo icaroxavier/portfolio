@@ -117,7 +117,7 @@ export default function Home() {
       <Head>
         <title>Portfolio</title>
       </Head>
-      <div className="h-screen flex flex-col">
+      <div className="h-screen flex flex-col overflow-y-auto">
         <Translate
           size={42}
           onClick={toggleTranslateMenu}
@@ -142,7 +142,7 @@ export default function Home() {
         {isTranslateMenuOpen && (
           <div className="fixed z-20 h-screen w-screen" onClick={handleCloseTranslateMenu}/>
         )}
-        <main className="overflow-y-auto">
+        <main className="">
           <div className="flex-1 flex flex-col w-full max-w-2xl mx-auto p-4 gap-8 overflow-y-auto relative">
             <LazyVoxelDog />
             <section className="z-10">
@@ -253,9 +253,7 @@ export default function Home() {
         </main>
         <footer className="
           w-full h-16 pt-1 bg-zinc-900 flex flex-col items-center justify-between
-          shadow-lg shadow-zinc-50
-          fixed bottom-0 left-0 "
-        >
+          shadow-lg shadow-zinc-50">
           <div className="flex gap-3">
             <Link href='https://www.linkedin.com/in/icaroxavier/' target="_blank">
               <LinkedinLogo size={40} className="cursor-pointer hover:scale-110 transition-all"/>
@@ -269,8 +267,6 @@ export default function Home() {
           </div>
           <div className="text-zinc-400 text-sm">© {new Date().getFullYear()} {t('footer.copyright')}</div>
         </footer>
-        <footer className="w-full h-36 bg-transparent -z-10"/>
-
       </div>
     </>
 
