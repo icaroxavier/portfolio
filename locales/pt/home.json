@@ -3,8 +3,8 @@
     "title": "Sobre mim",
     "description": "Olá, eu sou o Ícaro. Um Engenheiro de Software Front-end, apaixonado por tecnologia e pelo que eu faço. Fevereiro de 2021, tive minha primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, sempre trabalhando, estudando e me aprimorando na Área."
   },
-  "bio": {
-    "title": "Bio",
+  "timeline": {
+    "title": "Timeline",
     "06/2001": "Nasci em Fortaleza - Ceará, Brasil.",
     "02/2021": "Comecei o meu primeiro emprego na área como estagiário na RAV Tecnologia",
     "07/2021": "Entrei para o projeto Colono da EMBRAPII e do Polo de Inovação do IFCE.",

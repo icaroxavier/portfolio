@@ -20,17 +20,17 @@ export function Timeline() {
 
   return (
     <section>
-      <h2 className="text-2xl font-medium mb-2">{t('bio.title')}</h2>
+      <h2 className="text-2xl font-medium mb-2">{t('timeline.title')}</h2>
       <div className="flex flex-col">
-        <TimelineItem date="06/2001" description={t('bio.06/2001')} />
-        <TimelineItem date="02/2021" description={t('bio.02/2021')} />
-        <TimelineItem date="07/2021" description={t('bio.07/2021')} />
-        <TimelineItem date="09/2021" description={t('bio.09/2021')} />
-        <TimelineItem date="10/2021" description={t('bio.10/2021')} />
-        <TimelineItem date="04/2022" description={t('bio.04/2022-1')} />
-        <TimelineItem date="04/2022" description={t('bio.04/2022-2')} />
-        <TimelineItem date="03/2023" description={t('bio.03/2023-1')} />
-        <TimelineItem date="03/2023" description={t('bio.03/2023-2')} />
+        <TimelineItem date="06/2001" description={t('timeline.06/2001')} />
+        <TimelineItem date="02/2021" description={t('timeline.02/2021')} />
+        <TimelineItem date="07/2021" description={t('timeline.07/2021')} />
+        <TimelineItem date="09/2021" description={t('timeline.09/2021')} />
+        <TimelineItem date="10/2021" description={t('timeline.10/2021')} />
+        <TimelineItem date="04/2022" description={t('timeline.04/2022-1')} />
+        <TimelineItem date="04/2022" description={t('timeline.04/2022-2')} />
+        <TimelineItem date="03/2023" description={t('timeline.03/2023-1')} />
+        <TimelineItem date="03/2023" description={t('timeline.03/2023-2')} />
       </div>
     </section>
   )
