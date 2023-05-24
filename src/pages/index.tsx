@@ -1,7 +1,7 @@
 'use client'
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import VoxelDogLoader from '@portfolio/components/voxel-dog-loader'
+import VoxelDogLoader from '@portfolio/components/VoxelDogLoader'
 import { Footer } from "@portfolio/components/Footer";
 import { TranslateMenu } from "@portfolio/components/TranslateMenu";
 import { Projects } from "@portfolio/components/Projects";
