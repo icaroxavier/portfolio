@@ -21,7 +21,7 @@ export default function Home() {
       <Head>
         <title>Portfolio</title>
       </Head>
-      <main className="h-screen flex flex-col overflow-y-auto">
+      <main className="flex flex-col h-full">
         <TranslateMenu />
         <div>
           <div className="flex-1 flex flex-col w-full max-w-2xl mx-auto p-4 gap-8 overflow-y-auto relative">
