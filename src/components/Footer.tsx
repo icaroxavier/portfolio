@@ -7,21 +7,21 @@ export function Footer() {
 
     return (
       <footer className="
-        w-full h-16 pt-1 bg-zinc-900 flex flex-col items-center justify-between
+        w-full h-16 pt-1 bg-zinc-500 flex flex-col items-center justify-between
         shadow-lg shadow-zinc-50"
       >
         <div className="flex gap-3">
           <Link href='https://www.linkedin.com/in/icaroxavier/' target="_blank">
-            <LinkedinLogo size={40} className="cursor-pointer hover:scale-110 transition-all"/>
+            <LinkedinLogo size={40} className="cursor-pointer hover:scale-110 transition-all text-zinc-200"/>
           </Link>
           <Link href='https://www.github.com/icaroxavier' target="_blank">
-            <GithubLogo size={40} className="cursor-pointer hover:scale-110 transition-all"/>
+            <GithubLogo size={40} className="cursor-pointer hover:scale-110 transition-all text-zinc-200"/>
           </Link>
           <Link href='https://wa.me/5585998164001?text=Oi,%20tudo%20bem?' target="_blank">
-            <WhatsappLogo size={40} className="cursor-pointer hover:scale-110 transition-all"/>
+            <WhatsappLogo size={40} className="cursor-pointer hover:scale-110 transition-all text-zinc-200"/>
           </Link>
         </div>
-        <div className="text-zinc-400 text-sm">© {new Date().getFullYear()} {t('footer.copyright')}</div>
+        <div className="text-zinc-300 text-sm">© {new Date().getFullYear()} {t('footer.copyright')}</div>
       </footer>
     );
 }

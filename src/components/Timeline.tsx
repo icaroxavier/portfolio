@@ -8,9 +8,9 @@ interface TimelineItemProps {
 function TimelineItem({ date, description }: TimelineItemProps) {
   return (
     <p className="flex gap-2 border-l-zinc-200 border-l py-2 pl-4 relative">
-      <span className="h-4 w-4 absolute left-0 top-3 -translate-x-1/2 bg-zinc-200 rounded-full"></span>
-      <span className="text-zinc-300 font-bold">{date}</span>
-      <span className="text-zinc-400">{description}</span>
+      <span className="h-4 w-4 absolute left-0 top-3 -translate-x-1/2 bg-blue-500 rounded-full"></span>
+      <span className="text-zinc-600 font-bold">{date}</span>
+      <span className="text-zinc-500">{description}</span>
     </p>
   )
 }

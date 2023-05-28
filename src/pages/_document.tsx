@@ -10,7 +10,7 @@ export default function Document() {
         <meta name='description' content="Ícaro Xavier's Online Portfolio" />
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet"/>
       </Head>
-      <body className='bg-zinc-900 text-zinc-50'>
+      <body className='text-zinc-700'>
         <Main />
         <NextScript />
       </body>
