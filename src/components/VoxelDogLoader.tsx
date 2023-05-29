@@ -24,7 +24,7 @@ export const DogContainer = forwardRef<HTMLDivElement, DogContainerProps>(functi
       ref={ref}
       className="
         relative mx-auto
-        h-0 w-full pb-[calc(100%)] -mb-24 -mt-12
+        h-0 w-full pb-[calc(100%)] -mb-24
         md:w-[calc(40rem)] md:h-[calc(40rem)] md:-mt-36 md:-mb-48 md:pb-0"
     >
       {children}
