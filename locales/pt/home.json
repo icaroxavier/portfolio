@@ -38,6 +38,9 @@
     },
     "portfolio": {
       "description": "Esse é o meu portfólio, desenvolvido com Next.js e TailwindCSS, com o objetivo de mostrar um pouco do meu trabalho e das minhas habilidades."
+    },
+    "smart-recipe": {
+      "description": "Meu primeiro aplicativo usando IA, desenvolvido com Next.js e TailwindCSS, consumindo a API da OpenAI para gerar receitas com base nos ingredientes que você já tem em casa ou planeja comprar."
     }
   },
   "contacts": {

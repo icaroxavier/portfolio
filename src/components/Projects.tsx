@@ -12,13 +12,22 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'smart-recipe',
+    imagePath: '/smart-recipe.png',
+  },
+  {
     name: 'madeireira-geovane',
     imagePath: '/madeireira-geovane.png',
   },
+  // {
+  //   name: 'better-date-functions',
+  //   imagePath: '/better-date-functions.png',
+  //   link: 'https://github.com/icaroxavier/better-date-functions'
+  // },
   {
-    name: 'better-date-functions',
-    imagePath: '/better-date-functions.png',
-    link: 'https://github.com/icaroxavier/better-date-functions'
+    name: 'teste-omie',
+    imagePath: '/teste-omie.png',
+    link: 'https://github.com/icaroxavier/teste-omie'
   },
   {
     name: 'reminder-task-manager',
@@ -29,11 +38,6 @@ const projects: Project[] = [
     name: 'moRANGO',
     imagePath: '/morango.png',
     link: 'https://github.com/icaroxavier/moRANGO'
-  },
-  {
-    name: 'teste-omie',
-    imagePath: '/teste-omie.png',
-    link: 'https://github.com/icaroxavier/teste-omie'
   },
   {
     name: 'portfolio',
