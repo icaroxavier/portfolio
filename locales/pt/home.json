@@ -21,6 +21,7 @@
   },
   "projects": {
     "title": "Projetos pessoais",
+    "github": "Link para o repositório no Github",
     "madeireira-geovane": {
       "description": "Uma landing page para a geração de leads desenvolvida inteiramente por mim em um Job como Freelancer."
     },

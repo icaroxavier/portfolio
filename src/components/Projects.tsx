@@ -7,6 +7,7 @@ import { useState } from "react"
 interface Project {
   name: string
   imagePath: string
+  githubLink?: string
   link?: string
 }
 
@@ -14,35 +15,35 @@ const projects: Project[] = [
   {
     name: 'smart-recipe',
     imagePath: '/smart-recipe.png',
+    link: 'https://smartrecipe.vercel.app',
+    githubLink: 'https://github.com/icaroxavier/smart-recipe'
   },
   {
     name: 'madeireira-geovane',
     imagePath: '/madeireira-geovane.png',
+    link: 'https://madeireirageovane.com.br'
   },
-  // {
-  //   name: 'better-date-functions',
-  //   imagePath: '/better-date-functions.png',
-  //   link: 'https://github.com/icaroxavier/better-date-functions'
-  // },
   {
     name: 'teste-omie',
     imagePath: '/teste-omie.png',
-    link: 'https://github.com/icaroxavier/teste-omie'
+    githubLink: 'https://github.com/icaroxavier/teste-omie',
+    link: 'https://teste-omie.vercel.app/clientes/listar'
   },
   {
     name: 'reminder-task-manager',
     imagePath: '/reminder.jpg',
-    link: 'https://github.com/icaroxavier/reminder-task-manager'
+    githubLink: 'https://github.com/icaroxavier/reminder-task-manager'
   },
   {
     name: 'moRANGO',
     imagePath: '/morango.png',
-    link: 'https://github.com/icaroxavier/moRANGO'
+    githubLink: 'https://github.com/icaroxavier/moRANGO'
   },
   {
     name: 'portfolio',
     imagePath: '/portfolio.png',
-    link: 'https://github.com/icaroxavier/portfolio'
+    githubLink: 'https://github.com/icaroxavier/portfolio',
+    link: 'https://icaroxavier.vercel.app/'
   }
 ]
 
@@ -50,7 +51,7 @@ export function Projects() {
   const { t } = useTranslation('home')
   const [activeProject, setActiveProject] = useState<number>(0)
 
-  const { name, link } = projects[activeProject]
+  const { name, link, githubLink } = projects[activeProject]
 
   const images = projects.map(project => {
     return (
@@ -88,11 +89,12 @@ export function Projects() {
   return (
     <section className="flex flex-col gap-2">
       <h2 className="text-2xl font-medium">{t('projects.title')}</h2>
-      <div className="flex flex-col gap-2 w-full mb-2">
+      <div className="flex flex-col gap-2 w-full">
         <Link
           className={`text-lg mx-auto font-bold ${link ? 'underline text-blue-600 hover:text-blue-800' : 'text-zinc-600'}`}
           href={link || ''}
-          target={link ? '_blank' : '_self'}
+          target={'_blank'}
+          onClick={e => !link && e.preventDefault()}
         >
           {name}
         </Link>
@@ -110,7 +112,19 @@ export function Projects() {
             <ArrowRight size={20} className="cursor-pointer hover:scale-110 transition-all text-zinc-50" onClick={handleClickNextProject}/>
           </div>
         </div>
-        <p className="text-zinc-500 text-justify h-full" style={{minHeight: '6rem'}}>{t(`projects.${name}.description`)}</p>
+        <p className="text-zinc-500 text-justify h-full flex flex-col gap-2" style={{minHeight: '8rem'}}>
+          <span>{t(`projects.${name}.description`)}</span>
+          {githubLink && (
+            <Link
+              href={githubLink}
+              target={'_blank'}
+              className="text-md font-bold underline text-blue-600 hover:text-blue-800 w-fit"
+            >
+              {t('projects.github')}
+            </Link>
+          )}
+        </p>
+
       </div>
 
     </section>
