@@ -9,6 +9,7 @@ import { Contacts } from "@portfolio/components/Contacts";
 import { Hobbies } from "@portfolio/components/Hobbies";
 import { About } from "@portfolio/components/About";
 import { Timeline } from "@portfolio/components/Timeline";
+import { Experiences } from "@portfolio/components/Experiences";
 
 const LazyVoxelDog = dynamic(() => import('@portfolio/components/voxel-dog'), {
   ssr: false,
@@ -31,9 +32,10 @@ export default function Home() {
           <div className="flex-1 flex flex-col w-full max-w-2xl mx-auto p-4 gap-8 overflow-y-auto relative">
             <LazyVoxelDog />
             <About />
-            <Timeline />
-            <Hobbies />
+            <Experiences />
+            {/* <Timeline /> */}
             <Projects />
+            <Hobbies />
             <Contacts />
           </div>
         </div>

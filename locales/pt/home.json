@@ -1,7 +1,48 @@
 {
   "about": {
     "title": "Sobre mim",
-    "description": "Olá, eu sou o Ícaro. Um Engenheiro de Software Front-end, apaixonado por tecnologia e pelo que eu faço. Fevereiro de 2021, tive minha primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, sempre trabalhando, estudando e me aprimorando na Área."
+    "description": ["Olá, eu sou o Ícaro. Um ", "Desenvolvedor Front-end", ", apaixonado por tecnologia e pelo que eu faço. Fevereiro de 2021, tive minha primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, sempre trabalhando, estudando e me aprimorando na Área."]
+  },
+  "experiences": {
+    "title": "Experiências Profissionais",
+    "rav": {
+      "title": "RAV Tecnologia",
+      "function": "Full-stack",
+      "role": "Estagiário",
+      "period": "02/2021 ~ 09/2021"
+    },
+    "embrapii": {
+      "title": "EMBRAPII",
+      "function": "Front-end",
+      "role": "Bolsista",
+      "period": "07/2021 ~ 04/2022"
+    },
+    "certare": {
+      "title": "Certare Engenharia & Consultoria",
+      "function": "Full-stack",
+      "role": "Júnior",
+      "period": "10/2021 ~ 09/2022"
+    },
+    "omie": [
+      {
+        "title": "Omie",
+        "function": "Full-stack",
+        "role": "Júnior",
+        "period": "04/2022 ~ 09/2022"
+      },
+      {
+        "title": "Omie",
+        "function": "Full-stack",
+        "role": "Pleno",
+        "period": "10/2022 ~ 03/2023"
+      }
+    ],
+    "soluevo": {
+      "title": "Soluevo",
+      "function": "Front-end",
+      "role": "Pleno",
+      "period": "03/2023 ~ presente"
+    }
   },
   "timeline": {
     "title": "Timeline",
