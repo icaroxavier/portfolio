@@ -14,14 +14,14 @@
     },
     "embrapii": {
       "title": "EMBRAPII",
-      "function": "Full-stack",
+      "function": "Front-end",
       "role": "College Scholarship Holder",
       "period": "07/2021 ~ 04/2022"
     },
     "certare": {
       "title": "Certare Engenharia & Consultoria",
       "function": "Full-stack",
-      "role": "Junior",
+      "role": "Entry-level",
       "period": "10/2021 ~ 09/2022"
     },
     "omie": [
@@ -40,7 +40,7 @@
     ],
       "soluevo": {
       "title": "Soluevo",
-      "function": "Full-stack",
+      "function": "Front-end",
       "role": "Mid-level",
       "period": "03/2023 ~ present"
     }
