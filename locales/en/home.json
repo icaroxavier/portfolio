@@ -1,7 +1,7 @@
 {
   "about": {
     "title": "About me",
-    "description": ["Hello, my name is Ícaro Xavier, a ", "Front-end Developer", ", passionate about technology and what I do. In February 2021, I had my first opportunity to work for a company in the field, and since then I haven't stopped, always working, studying, and improving in the area."
+    "description": ["Hello, my name is Ícaro Xavier, a ", "Software Engineer", ", passionate about technology and what I do. In February 2021, I had my first opportunity to work for a company in the field, and since then I haven't stopped, always working, studying, and improving in the area."
     ]
   },
   "experiences": {
@@ -20,7 +20,7 @@
     },
     "certare": {
       "title": "Certare Engenharia & Consultoria",
-      "function": "Front-end",
+      "function": "Full-stack",
       "role": "Entry-level",
       "period": "10/2021 ~ 09/2022"
     },
@@ -40,7 +40,7 @@
     ],
       "soluevo": {
       "title": "Soluevo",
-      "function": "Front-end",
+      "function": "Full-stack",
       "role": "Mid-level",
       "period": "03/2023 ~ present"
     }

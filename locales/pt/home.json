@@ -1,7 +1,7 @@
 {
   "about": {
     "title": "Sobre mim",
-    "description": ["Olá, eu sou o Ícaro. Um ", "Desenvolvedor Full-stack", ", apaixonado por tecnologia e pelo que eu faço. Fevereiro de 2021, tive minha primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, sempre trabalhando, estudando e me aprimorando na Área."]
+    "description": ["Olá, eu sou o Ícaro. Um ", "Software Engineer", ", apaixonado por tecnologia e pelo que eu faço. Fevereiro de 2021, tive minha primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, sempre trabalhando, estudando e me aprimorando na Área."]
   },
   "experiences": {
     "title": "Experiências Profissionais",
@@ -19,7 +19,7 @@
     },
     "certare": {
       "title": "Certare Engenharia & Consultoria",
-      "function": "Front-end",
+      "function": "Full-stack",
       "role": "Júnior",
       "period": "10/2021 ~ 09/2022"
     },
@@ -39,7 +39,7 @@
     ],
     "soluevo": {
       "title": "Soluevo",
-      "function": "Front-end",
+      "function": "Full-stack",
       "role": "Pleno",
       "period": "03/2023 ~ presente"
     }
