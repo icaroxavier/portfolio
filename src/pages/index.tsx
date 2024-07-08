@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col h-full relative">
         <div className='flex flex-col absolute top-0 left-1/2 max-w-2xl -translate-x-1/2 w-full p-4 -z-10'>
-          <h1 className="text-5xl text-zinc-700">Ícaro Xavier</h1>
+          <h1 className="text-5xl text-zinc-700">Ícaro Gabriel</h1>
           <h2 className="text-md text-zinc-500">Software Engineer</h2>
         </div>
         <TranslateMenu />
