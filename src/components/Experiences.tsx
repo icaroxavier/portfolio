@@ -31,12 +31,8 @@ export function Experiences() {
           description={`<span class="text-zinc-600 font-medium">${t('experiences.nowcm.title')}</span class="text-zinc-600 font-medium"> - ${t('experiences.nowcm.function')} - ${t('experiences.nowcm.role')}`}
         />
         <TimelineItem
-          date={t('experiences.omie.1.period')}
-          description={`<span class="text-zinc-600 font-medium">${t('experiences.omie.1.title')}</span class="text-zinc-600 font-medium"> - ${t('experiences.omie.1.function')} - ${t('experiences.omie.1.role')}`}
-        />
-        <TimelineItem
-          date={t('experiences.omie.0.period')}
-          description={`<span class="text-zinc-600 font-medium">${t('experiences.omie.0.title')}</span class="text-zinc-600 font-medium"> - ${t('experiences.omie.0.function')} - ${t('experiences.omie.0.role')}`}
+          date={t('experiences.omie.period')}
+          description={`<span class="text-zinc-600 font-medium">${t('experiences.omie.title')}</span class="text-zinc-600 font-medium"> - ${t('experiences.omie.function')} - ${t('experiences.omie.role')}`}
         />
         <TimelineItem
           date={t('experiences.certare.period')}

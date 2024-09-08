@@ -23,20 +23,12 @@
       "role": "Júnior",
       "period": "10/2021 ~ 09/2022"
     },
-    "omie": [
-      {
-        "title": "Omie",
-        "function": "Full-stack",
-        "role": "Júnior",
-        "period": "04/2022 ~ 09/2022"
-      },
-      {
-        "title": "Omie",
-        "function": "Full-stack",
-        "role": "Pleno",
-        "period": "10/2022 ~ 03/2023"
-      }
-    ],
+    "omie": {
+      "title": "Omie",
+      "function": "Full-stack",
+      "role": "Júnior",
+      "period": "04/2022 ~ 03/2023"
+    },
     "nowcm": {
       "title": "NowCM",
       "function": "Full-stack",

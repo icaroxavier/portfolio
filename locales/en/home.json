@@ -9,39 +9,32 @@
     "rav": {
       "title": "RAV Tecnologia",
       "function": "Full-stack",
-      "role": "Intern",
+      "role": "Software Engineer",
       "period": "02/2021 ~ 09/2021"
     },
     "embrapii": {
       "title": "EMBRAPII",
       "function": "Front-end",
-      "role": "College Scholarship Holder",
+      "role": "Software Engineer",
+
       "period": "07/2021 ~ 04/2022"
     },
     "certare": {
       "title": "Certare Engenharia & Consultoria",
       "function": "Front-end",
-      "role": "Entry-level",
+      "role": "Software Engineer",
       "period": "10/2021 ~ 09/2022"
     },
-    "omie": [
-      {
-        "title": "Omie",
-        "function": "Full-stack",
-        "role": "Entry-level",
-        "period": "04/2022 ~ 09/2022"
-      },
-      {
-        "title": "Omie",
-        "function": "Full-stack",
-        "role": "Mid-level",
-        "period": "10/2022 ~ 03/2023"
-      }
-    ],
-      "nowcm": {
+    "omie": {
+      "title": "Omie",
+      "function": "Full-stack",
+      "role": "Software Engineer",
+      "period": "04/2022 ~ 03/2023"
+    },
+    "nowcm": {
       "title": "NowCM",
       "function": "Front-end",
-      "role": "Mid-level",
+      "role": "Software Engineer",
       "period": "03/2023 ~ present"
     }
   },
