@@ -27,8 +27,8 @@ export function Experiences() {
       <div className="flex flex-col">
         <TimelineItem
           now
-          date={t('experiences.soluevo.period')}
-          description={`<span class="text-zinc-600 font-medium">${t('experiences.soluevo.title')}</span class="text-zinc-600 font-medium"> - ${t('experiences.soluevo.function')} - ${t('experiences.soluevo.role')}`}
+          date={t('experiences.nowcm.period')}
+          description={`<span class="text-zinc-600 font-medium">${t('experiences.nowcm.title')}</span class="text-zinc-600 font-medium"> - ${t('experiences.nowcm.function')} - ${t('experiences.nowcm.role')}`}
         />
         <TimelineItem
           date={t('experiences.omie.1.period')}

@@ -1,7 +1,7 @@
 {
   "about": {
     "title": "About me",
-    "description": ["Hello, my name is Ícaro Gabriel, a ", "Software Engineer", ", passionate about technology and what I do. In February 2021, I had my first opportunity to work for a company in the field, and since then I haven't stopped, always working, studying, and improving in the area."
+    "description": ["Hello, my name is Ícaro Xavier, a ", "Software Engineer", ", passionate about technology and what I do. In February 2021, I had my first opportunity to work for a company in the field, and since then I haven't stopped, always working, studying, and improving in the area."
     ]
   },
   "experiences": {
@@ -20,7 +20,7 @@
     },
     "certare": {
       "title": "Certare Engenharia & Consultoria",
-      "function": "Full-stack",
+      "function": "Front-end",
       "role": "Entry-level",
       "period": "10/2021 ~ 09/2022"
     },
@@ -38,9 +38,9 @@
         "period": "10/2022 ~ 03/2023"
       }
     ],
-      "soluevo": {
-      "title": "Soluevo",
-      "function": "Full-stack",
+      "nowcm": {
+      "title": "NowCM",
+      "function": "Front-end",
       "role": "Mid-level",
       "period": "03/2023 ~ present"
     }
@@ -55,7 +55,7 @@
     "04/2022-1": "Completed the Colono project of EMBRAPII and Polo de Inovação do IFCE.",
     "04/2022-2": "Started working at Omie, within G-click.",
     "03/2023-1": "Finished my collaboration at Omie to accept another opportunity.",
-    "03/2023-2": "Started working at Soluevo, a consulting company, currently allocated in a European fintech."
+    "03/2023-2": "Started working at NowCM, a consulting company, currently allocated in a European fintech."
   },
   "hobbies": {
     "title": "Hobbies",
@@ -91,6 +91,6 @@
     "phone": "Phone"
   },
   "footer": {
-    "copyright": "Ícaro Gabriel. All rights reserved."
+    "copyright": "Ícaro Xavier. All rights reserved."
   }
 }

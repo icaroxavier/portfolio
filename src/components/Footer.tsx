@@ -19,7 +19,7 @@ export function Footer() {
           <a href='https://www.github.com/icaroxavier' target="_blank" rel="noopener noreferrer">
             <GithubLogo size={40} className="cursor-pointer hover:scale-110 transition-all text-zinc-70"/>
           </a>
-          <a href='https://wa.me/5585998164001?text=Oi,%20tudo%20bem?' target="_blank" rel="noopener noreferrer">
+          <a href='https://wa.me/5585998164001?text=Hello' target="_blank" rel="noopener noreferrer">
             <WhatsappLogo size={40} className="cursor-pointer hover:scale-110 transition-all text-zinc-70"/>
           </a>
         </div>
