@@ -1,7 +1,7 @@
 {
   "about": {
     "title": "Sobre mim",
-    "description": ["Olá, eu sou o Ícaro. Um ", "Software Engineer", ", apaixonado por tecnologia e pelo que eu faço. Fevereiro de 2021, tive minha primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, sempre trabalhando, estudando e me aprimorando na Área."]
+    "description": ["Olá, eu sou o Ícaro. Um ", "Software Engineer Senior", ", apaixonado por tecnologia e pelo que eu faço. Fevereiro de 2021, tive minha primeira oportunidade de trabalhar para uma empresa no ramo, desde então nunca parei, sempre trabalhando, estudando e me aprimorando na Área."]
   },
   "experiences": {
     "title": "Experiências Profissionais",
@@ -34,6 +34,12 @@
       "function": "Full-stack",
       "role": "Pleno",
       "period": "03/2023 ~ presente"
+    },
+    "bmo": {
+      "title": "BMO",
+      "function": "Front-end",
+      "role": "Senior",
+      "period": "11/2024 ~ present"
     }
   },
   "timeline": {

@@ -26,7 +26,10 @@ export function Experiences() {
       <h2 className="text-2xl font-medium mb-2">{t('experiences.title')}</h2>
       <div className="flex flex-col">
         <TimelineItem
-          now
+          date={t('experiences.bmo.period')}
+          description={`<span class="text-zinc-600 font-medium">${t('experiences.bmo.title')}</span class="text-zinc-600 font-medium"> - ${t('experiences.bmo.function')} - ${t('experiences.bmo.role')}`}
+        />
+        <TimelineItem
           date={t('experiences.nowcm.period')}
           description={`<span class="text-zinc-600 font-medium">${t('experiences.nowcm.title')}</span class="text-zinc-600 font-medium"> - ${t('experiences.nowcm.function')} - ${t('experiences.nowcm.role')}`}
         />
@@ -46,6 +49,7 @@ export function Experiences() {
           date={t('experiences.rav.period')}
           description={`<span class="text-zinc-600 font-medium">${t('experiences.rav.title')}</span class="text-zinc-600 font-medium"> - ${t('experiences.rav.function')} - ${t('experiences.rav.role')}`}
         />
+
       </div>
     </section>
   )

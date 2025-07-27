@@ -1,7 +1,7 @@
 {
   "about": {
     "title": "About me",
-    "description": ["Hello, my name is Ícaro Xavier, a ", "Software Engineer", ", passionate about technology and what I do. In February 2021, I had my first opportunity to work for a company in the field, and since then I haven't stopped, always working, studying, and improving in the area."
+    "description": ["Hello, my name is Ícaro Xavier, a ", "Senior Software Engineer", ", passionate about technology and what I do. In February 2021, I had my first opportunity to work for a company in the field, and since then I haven't stopped, always working, studying, and improving in the area."
     ]
   },
   "experiences": {
@@ -35,7 +35,13 @@
       "title": "NowCM",
       "function": "Front-end",
       "role": "Software Engineer",
-      "period": "03/2023 ~ present"
+      "period": "03/2023 ~ 11/2024"
+    },
+    "bmo": {
+      "title": "BMO",
+      "function": "Front-end",
+      "role": "Senior Software Engineer",
+      "period": "11/2024 ~ present"
     }
   },
   "timeline": {
